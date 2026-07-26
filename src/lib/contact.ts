@@ -1,11 +1,11 @@
 // TODO: replace placeholders with real business contact details.
 export const CONTACT = {
-  phone: "+27 21 555 0124",
-  phoneRaw: "+27215550124",
-  whatsappRaw: "27724448921",
-  whatsappDisplay: "+27 72 444 8921",
-  email: "studio@craftedinteriors.co.za",
-  address: "Unit 42, The Workshop District, Woodstock, Cape Town, 7925",
+  phone: "+27 63 468 2958",
+  phoneRaw: "+27634682958",
+  whatsappRaw: "27634682958",
+  whatsappDisplay: "+27 63 468 2958",
+  email: "Ishal.crafted@gmail.com",
+  address: "Lenasia",
   get telHref() {
     return `tel:${this.phoneRaw}`;
   },

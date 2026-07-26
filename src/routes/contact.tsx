@@ -112,11 +112,10 @@ function ContactPage() {
                 <MapPin className="size-5 text-timber shrink-0 mt-1" />
                 <div>
                   <p className="text-[10px] uppercase tracking-widest text-muted-ink">
-                    Workshop &amp; showroom
+                    Workshop
                   </p>
                   <p className="mt-1 text-base leading-relaxed">{CONTACT.address}</p>
                   <p className="mt-3 text-xs text-muted-ink">
-                    Visits by appointment · Monday to Friday, 9am – 5pm
                   </p>
                 </div>
               </div>
