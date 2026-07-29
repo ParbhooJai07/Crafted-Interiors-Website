@@ -7,7 +7,7 @@ import projectVanity from "@/assets/project-vanity.jpg";
 import serviceJoinery from "@/assets/service-joinery.jpg";
 import serviceWardrobes from "@/assets/service-wardrobes.jpg";
 import serviceKitchens from "@/assets/service-kitchens.jpg";
-import hero2 from "@/assets/hero-2.jpg";
+import hero2 from "@/assets/hero-2.jpeg";
 
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
