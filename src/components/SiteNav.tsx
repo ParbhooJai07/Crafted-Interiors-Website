@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import craftedIntLogo from "../assets/CraftedIntLogo.png";
 
 const links = [
   { to: "/", label: "Home" },
@@ -28,8 +29,11 @@ export function SiteNav() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link to="/" className="font-serif text-2xl tracking-tight leading-none">
-          Crafted Interiors
+        <Link to="/" className="flex items-center gap-2">
+          <img src={craftedIntLogo} alt="Crafted Interiors" className="h-8 w-auto" />
+          <span className="font-serif text-2xl tracking-tight leading-none">
+            Crafted Interiors
+          </span>
         </Link>
 
         <div className="hidden md:flex items-center gap-8">
