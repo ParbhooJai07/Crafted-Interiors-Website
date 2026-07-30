@@ -119,3 +119,35 @@
 @utility animate-reveal {
   animation: reveal-up 0.9s cubic-bezier(0.32, 0.72, 0, 1) both;
 }
+
+.page-transition-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.page-enter,
+.page-exit {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+}
+
+/* New page */
+.page-enter {
+  opacity: 0;
+}
+
+.page-enter-active {
+  opacity: 1;
+  transition: opacity 350ms ease;
+}
+
+/* Old page */
+.page-exit {
+  opacity: 1;
+}
+
+.page-exit-active {
+  opacity: 0;
+  transition: opacity 350ms ease;
+}

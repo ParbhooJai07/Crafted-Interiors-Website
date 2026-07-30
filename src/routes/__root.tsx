@@ -6,9 +6,10 @@ import {
   useRouter,
   HeadContent,
   Scripts,
+  useRouterState, 
 } from "@tanstack/react-router";
-import { useEffect, type ReactNode } from "react";
-
+import { useRef, useEffect, type ReactNode } from "react";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 import appCss from "../styles.css?url";
 import { SiteNav } from "../components/SiteNav";
 import { SiteFooter } from "../components/SiteFooter";
@@ -69,6 +70,17 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   );
 }
 
+function TransitionPage({ children }: { children: ReactNode }) {
+  const nodeRef = useRef<HTMLDivElement>(null);
+  return (
+    <CSSTransition nodeRef={nodeRef} timeout={300} classNames="page" unmountOnExit>
+      <div ref={nodeRef} className="page-transition-wrapper">
+        {children}
+      </div>
+    </CSSTransition>
+  );
+}
+
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
     meta: [
@@ -123,13 +135,27 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+  const location = useRouterState({ select: (s) => s.location });
+  const nodeRef = useRef<HTMLDivElement>(null);
 
   return (
     <QueryClientProvider client={queryClient}>
       <div className="min-h-screen flex flex-col bg-canvas text-ink">
         <SiteNav />
         <main className="flex-1">
-          <Outlet />
+          <TransitionGroup component={null}>
+            <CSSTransition
+              key={location.pathname}
+              nodeRef={nodeRef}
+              timeout={350}
+              classNames="page"
+              unmountOnExit
+            >
+              <div ref={nodeRef} className="page-transition-wrapper">
+                <Outlet />
+              </div>
+            </CSSTransition>
+          </TransitionGroup>
         </main>
         <SiteFooter />
         <FloatingContact />
