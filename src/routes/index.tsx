@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import heroPoster from "@/assets/hero-poster.jpeg";
 import hero2 from "@/assets/hero-2.jpeg";
 import hero3 from "@/assets/hero-3.jpeg";
-import serviceKitchens from "@/assets/service-kitchens.jpg";
+import serviceKitchens from "@/assets/WhatsApp Image 2026-07-29 at 15.24.28.jpeg";
 import serviceWardrobes from "@/assets/service-wardrobes.jpg";
 import serviceJoinery from "@/assets/service-joinery.jpg";
 import projectHydepark from "@/assets/project-hydepark.jpg";

@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import serviceKitchens from "@/assets/service-kitchens.jpg";
+import serviceKitchens from "@/assets/WhatsApp Image 2026-07-29 at 15.24.28.jpeg";
 import serviceWardrobes from "@/assets/service-wardrobes.jpg";
 import serviceJoinery from "@/assets/service-joinery.jpg";
 import projectPantry from "@/assets/project-pantry.jpg";
