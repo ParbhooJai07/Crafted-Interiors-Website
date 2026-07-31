@@ -6,7 +6,7 @@ import projectPantry from "@/assets/project-pantry.jpg";
 import projectVanity from "@/assets/project-vanity.jpg";
 import serviceJoinery from "@/assets/service-joinery.jpg";
 import serviceWardrobes from "@/assets/service-wardrobes.jpg";
-import serviceKitchens from "@/assets/service-kitchens.jpg";
+import serviceKitchens from "@/assets/service-kitchens.jpeg";
 import hero2 from "@/assets/hero-2.jpeg";
 
 export const Route = createFileRoute("/portfolio")({

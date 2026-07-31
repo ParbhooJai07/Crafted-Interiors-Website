@@ -1,7 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import heroPoster from "@/assets/hero-poster.jpeg";
-import hero2 from "@/assets/hero-2.jpeg";
-import hero3 from "@/assets/hero-3.jpeg";
+import heroPoster from "@/assets/hero-poster-movie.mp4";
 import serviceKitchens from "@/assets/service-kitchens.jpg";
 import serviceWardrobes from "@/assets/service-wardrobes.jpg";
 import serviceJoinery from "@/assets/service-joinery.jpg";
@@ -36,29 +34,13 @@ function HomePage() {
       {/* HERO — cinematic crossfading slideshow (Ken Burns) */}
       <section className="relative h-[92vh] min-h-[600px] w-full overflow-hidden bg-ink">
         <div className="absolute inset-0">
-          <img
+          <video
             src={heroPoster}
-            alt="Bespoke oak and marble kitchen"
-            className="hero-slide"
-            style={{ animationDelay: "0s" }}
-            width={1920}
-            height={1088}
-          />
-          <img
-            src={hero2}
-            alt="Walnut kitchen with tall windows"
-            className="hero-slide"
-            style={{ animationDelay: "7s" }}
-            loading="lazy"
-            width={1920}
-            height={1088}
-          />
-          <img
-            src={hero3}
-            alt="Bespoke walk-in wardrobe suite"
-            className="hero-slide"
-            style={{ animationDelay: "14s" }}
-            loading="lazy"
+            className="absolute inset-0 w-full h-full object-cover"
+            autoPlay
+            muted
+            loop
+            playsInline
             width={1920}
             height={1088}
           />
