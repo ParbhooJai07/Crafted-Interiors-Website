@@ -1,13 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-<<<<<<< HEAD
-import heroPoster from "@/assets/hero-poster.jpeg";
-import hero2 from "@/assets/hero-2.jpeg";
-import hero3 from "@/assets/hero-3.jpeg";
-import serviceKitchens from "@/assets/WhatsApp Image 2026-07-29 at 15.24.28.jpeg";
-=======
 import heroPoster from "@/assets/hero-poster-movie.mp4";
 import serviceKitchens from "@/assets/service-kitchens.jpg";
->>>>>>> main
 import serviceWardrobes from "@/assets/service-wardrobes.jpg";
 import serviceJoinery from "@/assets/service-joinery.jpg";
 import projectHydepark from "@/assets/project-hydepark.jpg";
@@ -40,7 +33,7 @@ function HomePage() {
     <>
       {/* HERO — cinematic crossfading slideshow (Ken Burns) */}
       <section className="relative h-[92vh] min-h-[600px] w-full overflow-hidden bg-ink">
-        <div className="absolute inset-0">
+<div className="absolute inset-0">
           <video
             src={heroPoster}
             className="absolute inset-0 w-full h-full object-cover"
