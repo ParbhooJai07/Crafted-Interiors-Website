@@ -175,22 +175,21 @@ function HomePage() {
             </h2>
             <div className="mt-8 space-y-5 text-muted-ink leading-relaxed max-w-[56ch]">
               <p>
-                Our philosophy is rooted in the tactile honesty of natural
-                timber. We source sustainably harvested hardwoods, selected for
-                grain consistency and structural integrity.
+                Our brand is built on a deep appreciation for the natural texture of genuine timber. 
+                We source eco-friendly hardwoods, hand-selecting every piece 
+                to ensure uniform grain quality and dependable durability
               </p>
               <p>
-                Every joint is cut with precision, every surface hand-sanded,
-                and every finish applied to enhance rather than mask the
-                biological history of the wood.
+               From precise joint cuts to hand-sanded surfaces, 
+               our process is all about bringing out the wood’s natural character,
+               not covering it up.
               </p>
             </div>
 
             <figure className="mt-10 p-8 bg-stone rounded-lg ring-1 ring-ink/5">
               <blockquote className="font-serif italic text-xl leading-snug">
-                “The weight of the doors and the absolute silence of the hinges
-                tells you everything you need to know about the quality of
-                Crafted Interiors.”
+                "The solid weight of the doors and the completely silent hinges 
+                speak volumes about the craftsmanship behind Crafted Interiors.”
               </blockquote>
               <figcaption className="mt-4 text-xs font-medium uppercase tracking-widest text-muted-ink">
                 — David Chen, Architect
