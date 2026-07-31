@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import workshop from "@/assets/workshop.jpg";
-import serviceKitchens from "@/assets/service-kitchens.jpg";
+import kitchen1 from "@/assets/kitchen-1.jpeg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -87,7 +87,7 @@ function AboutPage() {
       <section className="py-24 bg-canvas">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
           <div className="aspect-[4/5] rounded-lg overflow-hidden ring-1 ring-ink/5 bg-stone">
-            <img src={serviceKitchens} alt="Joinery detail" loading="lazy" className="w-full h-full object-cover" />
+            <img src={kitchen1} alt="Joinery detail" loading="lazy" className="w-full h-full object-cover" />
           </div>
           <div>
             <h2 className="font-serif text-4xl md:text-5xl leading-tight max-w-[22ch]">

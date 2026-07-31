@@ -1,13 +1,13 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import projectHydepark from "@/assets/project-hydepark.jpg";
-import projectHardware from "@/assets/project-hardware.jpg";
-import projectLibrary from "@/assets/project-library.jpg";
-import projectPantry from "@/assets/project-pantry.jpg";
-import projectVanity from "@/assets/project-vanity.jpg";
-import serviceJoinery from "@/assets/service-joinery.jpg";
-import serviceWardrobes from "@/assets/service-wardrobes.jpg";
-import serviceKitchens from "@/assets/service-kitchens.jpeg";
-import hero2 from "@/assets/hero-2.jpeg";
+import kitchen1 from "@/assets/kitchen-1.jpeg";
+import kitchen2 from "@/assets/kitchen-2.jpeg";
+import kitchen3 from "@/assets/kitchen-3.jpeg";
+import study1 from "@/assets/study-1.jpeg";
+import study2 from "@/assets/study-2.jpeg";
+import hardware1 from "@/assets/hardware-1.jpeg";
+import lounge1 from "@/assets/lounge-1.jpeg";
+import wardrobe1 from "@/assets/wardrobe-1.jpeg";
+import joinery1 from "@/assets/joinery-1.jpeg";
 
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
@@ -24,22 +24,22 @@ export const Route = createFileRoute("/portfolio")({
         content:
           "A selection of recent bespoke kitchens, wardrobes and joinery commissions.",
       },
-      { property: "og:image", content: projectHydepark },
+      { property: "og:image", content: kitchen2 },
     ],
   }),
   component: PortfolioPage,
 });
 
 const projects = [
-  { img: projectHydepark, title: "The Hyde Park Kitchen", location: "Johannesburg · 2024", span: "md:col-span-8", aspect: "aspect-[16/10]" },
-  { img: projectHardware, title: "Brass & Walnut Study", location: "Detail · 2024", span: "md:col-span-4", aspect: "aspect-square" },
-  { img: projectLibrary, title: "The Cotswold Library", location: "England · 2023", span: "md:col-span-4", aspect: "aspect-[3/4]" },
-  { img: hero2, title: "The Vineyard Estate", location: "Constantia · 2023", span: "md:col-span-8", aspect: "aspect-[16/10]" },
-  { img: serviceWardrobes, title: "Master Dressing Room", location: "Camps Bay · 2023", span: "md:col-span-6", aspect: "aspect-[4/5]" },
-  { img: projectPantry, title: "The Baker's Pantry", location: "Bishopscourt · 2023", span: "md:col-span-6", aspect: "aspect-[4/5]" },
-  { img: serviceJoinery, title: "Panelled Living Room", location: "Bantry Bay · 2022", span: "md:col-span-7", aspect: "aspect-[16/10]" },
-  { img: projectVanity, title: "Oak & Travertine Vanity", location: "Higgovale · 2022", span: "md:col-span-5", aspect: "aspect-[4/5]" },
-  { img: serviceKitchens, title: "Joinery Detail Study", location: "Workshop · 2022", span: "md:col-span-12", aspect: "aspect-[21/9]" },
+  { img: kitchen2, title: "The Hyde Park Kitchen", location: "Johannesburg · 2024", span: "md:col-span-8", aspect: "aspect-[16/10]" },
+  { img: hardware1, title: "Brass & Walnut Study", location: "Detail · 2024", span: "md:col-span-4", aspect: "aspect-square" },
+  { img: kitchen3, title: "The Cotswold Library", location: "England · 2023", span: "md:col-span-4", aspect: "aspect-[3/4]" },
+  { img: study1, title: "The Vineyard Estate", location: "Constantia · 2023", span: "md:col-span-8", aspect: "aspect-[16/10]" },
+  { img: wardrobe1, title: "Master Dressing Room", location: "Camps Bay · 2023", span: "md:col-span-6", aspect: "aspect-[4/5]" },
+  { img: joinery1, title: "The Baker's Pantry", location: "Bishopscourt · 2023", span: "md:col-span-6", aspect: "aspect-[4/5]" },
+  { img: lounge1, title: "Panelled Living Room", location: "Bantry Bay · 2022", span: "md:col-span-7", aspect: "aspect-[16/10]" },
+  { img: study2, title: "Oak & Travertine Vanity", location: "Higgovale · 2022", span: "md:col-span-5", aspect: "aspect-[4/5]" },
+  { img: kitchen1, title: "Joinery Detail Study", location: "Workshop · 2022", span: "md:col-span-12", aspect: "aspect-[21/9]" },
 ] as const;
 
 function PortfolioPage() {

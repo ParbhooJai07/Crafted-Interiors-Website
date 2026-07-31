@@ -1,10 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import serviceKitchens from "@/assets/service-kitchens.jpeg";
-import serviceWardrobes from "@/assets/service-wardrobes.jpg";
-import serviceJoinery from "@/assets/service-joinery.jpg";
-import projectPantry from "@/assets/project-pantry.jpg";
-import projectVanity from "@/assets/project-vanity.jpg";
-import projectLibrary from "@/assets/project-library.jpg";
+import kitchen1 from "@/assets/kitchen-1.jpeg";
+import kitchen3 from "@/assets/kitchen-3.jpeg";
+import study2 from "@/assets/study-2.jpeg";
+import lounge1 from "@/assets/lounge-1.jpeg";
+import wardrobe1 from "@/assets/wardrobe-1.jpeg";
+import joinery1 from "@/assets/joinery-1.jpeg";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
@@ -28,37 +28,37 @@ export const Route = createFileRoute("/services")({
 
 const services = [
   {
-    img: serviceKitchens,
+    img: kitchen1,
     title: "Bespoke Kitchens",
     copy: "Full-scale kitchen design from concept through installation. Integrated appliances, dovetailed drawers, custom larder units and finishes hand-selected for your palette.",
     details: ["Kitchen islands & butlers pantries", "Integrated appliance housing", "Solid timber & hand-painted finishes"],
   },
   {
-    img: serviceWardrobes,
+    img: wardrobe1,
     title: "Signature Wardrobes",
     copy: "Walk-in dressing rooms and reach-in wardrobes engineered around your wardrobe, with soft-close mechanisms, integrated lighting and internal joinery.",
     details: ["Walk-in dressing rooms", "Integrated LED lighting", "Custom drawer & shoe systems"],
   },
   {
-    img: serviceJoinery,
+    img: lounge1,
     title: "Architectural Joinery",
     copy: "Room-defining built-ins — panelling, media walls, staircases and full library rooms — designed in dialogue with your architect or interior designer.",
     details: ["Wall panelling & wainscoting", "Media & entertainment units", "Bespoke doors & staircases"],
   },
   {
-    img: projectPantry,
+    img: joinery1,
     title: "Walk-in Pantries",
     copy: "Chef-grade organisation with adjustable shelving, integrated small appliances, and dedicated stone or timber worktops for prep.",
     details: ["Adjustable oak shelving", "Integrated appliance stations", "Custom crate & jar systems"],
   },
   {
-    img: projectVanity,
+    img: study2,
     title: "Bathroom Vanities",
     copy: "Moisture-resilient hardwood construction with stone or ceramic tops, integrated lighting mirrors and custom brass hardware.",
     details: ["Marine-grade timber", "Stone & ceramic tops", "Concealed plumbing housings"],
   },
   {
-    img: projectLibrary,
+    img: kitchen3,
     title: "Libraries & Studies",
     copy: "Floor-to-ceiling shelving with sliding ladders, integrated desks and reading nooks — spaces built for a lifetime of collecting.",
     details: ["Sliding library ladders", "Integrated desks & seating", "Solid mahogany & oak"],

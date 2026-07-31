@@ -1,12 +1,12 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroPoster from "@/assets/hero-poster-movie.mp4";
-import serviceKitchens from "@/assets/service-kitchens.jpg";
-import serviceWardrobes from "@/assets/service-wardrobes.jpg";
-import serviceJoinery from "@/assets/service-joinery.jpg";
-import projectHydepark from "@/assets/project-hydepark.jpg";
-import projectHardware from "@/assets/project-hardware.jpg";
-import projectLibrary from "@/assets/project-library.jpg";
 import workshop from "@/assets/workshop.jpg";
+import kitchen1 from "@/assets/kitchen-1.jpeg";
+import kitchen2 from "@/assets/kitchen-2.jpeg";
+import kitchen3 from "@/assets/kitchen-3.jpeg";
+import hardware1 from "@/assets/hardware-1.jpeg";
+import lounge1 from "@/assets/lounge-1.jpeg";
+import wardrobe1 from "@/assets/wardrobe-1.jpeg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -100,17 +100,17 @@ function HomePage() {
           <div className="grid md:grid-cols-3 gap-10 md:gap-12">
             {[
               {
-                img: serviceKitchens,
+                img: kitchen1,
                 title: "Bespoke Kitchens",
                 copy: "Functional sculpture tailored to your culinary habits, with integrated appliances and hand-finished timber.",
               },
               {
-                img: serviceWardrobes,
+                img: wardrobe1,
                 title: "Signature Wardrobes",
                 copy: "Storage that disappears into your architecture — intelligent, quiet-close engineering finished by hand.",
               },
               {
-                img: serviceJoinery,
+                img: lounge1,
                 title: "Architectural Joinery",
                 copy: "Libraries, media walls, entryways — the permanent fixtures that define the soul of a residence.",
               },
@@ -151,16 +151,16 @@ function HomePage() {
 
           <div className="grid md:grid-cols-12 gap-5 md:gap-6">
             <figure className="md:col-span-8 aspect-[16/10] rounded-lg overflow-hidden ring-1 ring-ink/5 bg-stone">
-              <img src={projectHydepark} alt="Hyde Park kitchen" loading="lazy" width={1280} height={800} className="w-full h-full object-cover" />
+              <img src={kitchen2} alt="Hyde Park kitchen" loading="lazy" width={1280} height={800} className="w-full h-full object-cover" />
             </figure>
             <figure className="md:col-span-4 aspect-square rounded-lg overflow-hidden ring-1 ring-ink/5 bg-stone">
-              <img src={projectHardware} alt="Brass hardware detail" loading="lazy" width={800} height={800} className="w-full h-full object-cover" />
+              <img src={hardware1} alt="Brass hardware detail" loading="lazy" width={800} height={800} className="w-full h-full object-cover" />
             </figure>
             <figure className="md:col-span-5 aspect-[4/5] rounded-lg overflow-hidden ring-1 ring-ink/5 bg-stone">
-              <img src={projectLibrary} alt="Mahogany library" loading="lazy" width={800} height={1200} className="w-full h-full object-cover" />
+              <img src={kitchen3} alt="Mahogany library" loading="lazy" width={800} height={1200} className="w-full h-full object-cover" />
             </figure>
             <figure className="md:col-span-7 aspect-[16/10] rounded-lg overflow-hidden ring-1 ring-ink/5 bg-stone">
-              <img src={serviceJoinery} alt="Architectural wood panelling" loading="lazy" width={1024} height={1024} className="w-full h-full object-cover" />
+              <img src={lounge1} alt="Architectural wood panelling" loading="lazy" width={1024} height={1024} className="w-full h-full object-cover" />
             </figure>
           </div>
         </div>
