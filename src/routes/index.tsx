@@ -1,8 +1,13 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+<<<<<<< HEAD
 import heroPoster from "@/assets/hero-poster.jpeg";
 import hero2 from "@/assets/hero-2.jpeg";
 import hero3 from "@/assets/hero-3.jpeg";
 import serviceKitchens from "@/assets/WhatsApp Image 2026-07-29 at 15.24.28.jpeg";
+=======
+import heroPoster from "@/assets/hero-poster-movie.mp4";
+import serviceKitchens from "@/assets/service-kitchens.jpg";
+>>>>>>> main
 import serviceWardrobes from "@/assets/service-wardrobes.jpg";
 import serviceJoinery from "@/assets/service-joinery.jpg";
 import projectHydepark from "@/assets/project-hydepark.jpg";
@@ -36,29 +41,13 @@ function HomePage() {
       {/* HERO — cinematic crossfading slideshow (Ken Burns) */}
       <section className="relative h-[92vh] min-h-[600px] w-full overflow-hidden bg-ink">
         <div className="absolute inset-0">
-          <img
+          <video
             src={heroPoster}
-            alt="Bespoke oak and marble kitchen"
-            className="hero-slide"
-            style={{ animationDelay: "0s" }}
-            width={1920}
-            height={1088}
-          />
-          <img
-            src={hero2}
-            alt="Walnut kitchen with tall windows"
-            className="hero-slide"
-            style={{ animationDelay: "7s" }}
-            loading="lazy"
-            width={1920}
-            height={1088}
-          />
-          <img
-            src={hero3}
-            alt="Bespoke walk-in wardrobe suite"
-            className="hero-slide"
-            style={{ animationDelay: "14s" }}
-            loading="lazy"
+            className="absolute inset-0 w-full h-full object-cover"
+            autoPlay
+            muted
+            loop
+            playsInline
             width={1920}
             height={1088}
           />
@@ -193,22 +182,21 @@ function HomePage() {
             </h2>
             <div className="mt-8 space-y-5 text-muted-ink leading-relaxed max-w-[56ch]">
               <p>
-                Our philosophy is rooted in the tactile honesty of natural
-                timber. We source sustainably harvested hardwoods, selected for
-                grain consistency and structural integrity.
+                Our brand is built on a deep appreciation for the natural texture of genuine timber. 
+                We source eco-friendly hardwoods, hand-selecting every piece 
+                to ensure uniform grain quality and dependable durability
               </p>
               <p>
-                Every joint is cut with precision, every surface hand-sanded,
-                and every finish applied to enhance rather than mask the
-                biological history of the wood.
+               From precise joint cuts to hand-sanded surfaces, 
+               our process is all about bringing out the wood’s natural character,
+               not covering it up.
               </p>
             </div>
 
             <figure className="mt-10 p-8 bg-stone rounded-lg ring-1 ring-ink/5">
               <blockquote className="font-serif italic text-xl leading-snug">
-                “The weight of the doors and the absolute silence of the hinges
-                tells you everything you need to know about the quality of
-                Crafted Interiors.”
+                "The solid weight of the doors and the completely silent hinges 
+                speak volumes about the craftsmanship behind Crafted Interiors.”
               </blockquote>
               <figcaption className="mt-4 text-xs font-medium uppercase tracking-widest text-muted-ink">
                 — David Chen, Architect

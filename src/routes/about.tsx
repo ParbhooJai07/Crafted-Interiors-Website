@@ -44,16 +44,16 @@ function AboutPage() {
             </h1>
             <div className="mt-8 space-y-5 text-muted-ink leading-relaxed max-w-[56ch]">
               <p>
-                Crafted Interiors was founded on a simple belief: that a
-                well-made cabinet should feel as good as it looks. It's the
-                resistance of a perfectly weighted drawer, the silence of a
-                solid door closing against its frame, the grain that flows
-                uninterrupted across a sequence of units.
+               We started Crafted Interiors on a simple idea: 
+               great cabinetry should feel just as good as it looks. 
+               You notice it in the details. It's the smooth, heavy glide of a perfectly weighted drawer. 
+               It’s the total silence when a solid door closes against its frame. 
+               It’s the way the wood grain flows naturally from one cabinet right into the next.
               </p>
               <p>
-                We're a small team of designers and cabinetmakers working out
-                of a converted warehouse. Every commission passes through the
-                same set of hands from first sketch to final install.
+                We’re just a small team of designers and cabinetmakers working out of a converted warehouse. 
+                For us, the work is deeply personal. Every single project passes through the exact same set of hands,
+                 from that very first sketch on paper right through to the final installation in your home.
               </p>
             </div>
           </div>
@@ -95,14 +95,14 @@ function AboutPage() {
             </h2>
             <div className="mt-8 space-y-5 text-muted-ink leading-relaxed">
               <p>
-                We work almost exclusively with FSC-certified European oak,
-                American walnut, and locally sourced hardwoods. Every board is
-                selected by hand for grain, colour, and stability.
+               Material is everything to us. We make sure that the wood is the best quality available and 
+               every single board is hand-selected by our makers for its unique grain, rich colour, and natural stability.
               </p>
               <p>
-                Where hardware matters — hinges, runners, brass pulls — we
-                specify from the same makers we've trusted for over a decade.
-                Nothing is chosen for cost alone.
+                When it comes to hardware—things like hinges, runners, and brass pulls—we don’t cut corners. 
+                We only use pieces from the exact same makers we’ve known and trusted for over a decade. 
+                We never choose a component just to save a bit of money. 
+                If it goes into your cabinets, it's because it's built to last.
               </p>
             </div>
             <Link

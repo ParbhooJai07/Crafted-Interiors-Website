@@ -31,15 +31,35 @@ function ContactPage() {
     const form = e.currentTarget;
     const data = new FormData(form);
     const name = String(data.get("name") ?? "");
-    const message = String(data.get("message") ?? "");
+    const email = String(data.get("email") ?? "");
+    const phone = String(data.get("phone") ?? "");
     const project = String(data.get("project") ?? "");
-    const body = encodeURIComponent(
-      `Hi Crafted Interiors,\n\nI'd like to discuss a ${project} project.\n\n${message}\n\n— ${name}`,
+    const message = String(data.get("message") ?? "");
+
+    const lines = [
+      `Hi Crafted Interiors, I'd like to discuss a ${project} project.`,
+      "",
+      message,
+      "",
+      `— ${name}`,
+      email ? `Email: ${email}` : "",
+      phone ? `Phone: ${phone}` : "",
+    ].filter(Boolean);
+
+    const text = encodeURIComponent(lines.join("\n"));
+
+    // CONTACT.whatsappHref is expected to look like "https://wa.me/44XXXXXXXXXX"
+    const separator = CONTACT.whatsappHref.includes("?") ? "&" : "?";
+
+    // Opens WhatsApp (app or web) with the message pre-filled.
+    // The visitor still has to tap "send" themselves — no page can do that
+    // last step silently, on WhatsApp or anywhere else.
+    window.open(
+      `${CONTACT.whatsappHref}${separator}text=${text}`,
+      "_blank",
+      "noreferrer",
     );
-    // Open the visitor's mail client pre-filled to the studio address.
-    window.location.href = `${CONTACT.mailHref}?subject=${encodeURIComponent(
-      "New project enquiry",
-    )}&body=${body}`;
+
     setSent(true);
   }
 
@@ -115,8 +135,7 @@ function ContactPage() {
                     Workshop
                   </p>
                   <p className="mt-1 text-base leading-relaxed">{CONTACT.address}</p>
-                  <p className="mt-3 text-xs text-muted-ink">
-                  </p>
+                  <p className="mt-3 text-xs text-muted-ink"></p>
                 </div>
               </div>
             </div>
@@ -130,10 +149,10 @@ function ContactPage() {
 
             {sent ? (
               <div className="mt-10 p-6 rounded-md bg-canvas/5 ring-1 ring-canvas/10 text-canvas/80 text-sm">
-                Your email client should have opened. If not, please email us
-                directly at{" "}
-                <a href={CONTACT.mailHref} className="underline">
-                  {CONTACT.email}
+                WhatsApp should have opened with your message ready to send.
+                If it didn't, message us directly at{" "}
+                <a href={CONTACT.whatsappHref} className="underline" target="_blank" rel="noreferrer">
+                  {CONTACT.whatsappDisplay}
                 </a>
                 .
               </div>
@@ -141,7 +160,7 @@ function ContactPage() {
               <form onSubmit={handleSubmit} className="mt-8 space-y-5">
                 <Field label="Name" name="name" required placeholder="Your full name" />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                  <Field label="Email" name="email" type="email" required placeholder="you@example.com" />
+                  <Field label="Email" name="email" type="email" placeholder="Optional" />
                   <Field label="Phone" name="phone" type="tel" placeholder="Optional" />
                 </div>
                 <div>
@@ -172,7 +191,7 @@ function ContactPage() {
                   type="submit"
                   className="w-full py-4 mt-2 bg-canvas text-ink rounded-full text-sm font-medium hover:bg-timber hover:text-canvas transition-colors"
                 >
-                  Send enquiry
+                  Send via WhatsApp
                 </button>
               </form>
             )}
