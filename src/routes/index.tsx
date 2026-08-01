@@ -53,11 +53,10 @@ function HomePage() {
               Bespoke carpentry &amp; cabinetry
             </span>
             <h1 className="font-serif text-5xl md:text-7xl leading-[1.05] text-canvas mt-5 text-balance">
-              Honest materials, precision joinery.
+              Innovative design, Timeless appeal.
             </h1>
             <p className="mt-6 text-canvas/85 text-lg max-w-[38ch] leading-relaxed">
-              Bespoke kitchens and wardrobes designed for the rhythm of modern
-              life, crafted by hand in our local workshop.
+              Bespoke kitchens and wardrobes designed for smart storage with premium finishes and expert craftsmanship
             </p>
             <div className="mt-10 flex flex-wrap gap-3">
               <Link
@@ -102,17 +101,17 @@ function HomePage() {
               {
                 img: kitchen1,
                 title: "Bespoke Kitchens",
-                copy: "Functional sculpture tailored to your culinary habits, with integrated appliances and hand-finished timber.",
+                copy: "Functional sculpture tailored to your culinary habits, with space accounted for integrated appliances.",
               },
               {
                 img: wardrobe1,
                 title: "Signature Wardrobes",
-                copy: "Storage that disappears into your architecture — intelligent, quiet-close engineering finished by hand.",
+                copy: "Beautifully designed wardrobes for homes that value both form and function.",
               },
               {
                 img: lounge1,
-                title: "Architectural Joinery",
-                copy: "Libraries, media walls, entryways — the permanent fixtures that define the soul of a residence.",
+                title: "Custom Works",
+                copy: "Fixtures from vanities and entertainment units to bar areas that add soul to your home.",
               },
             ].map((s) => (
               <div key={s.title} className="group">
@@ -175,14 +174,15 @@ function HomePage() {
             </h2>
             <div className="mt-8 space-y-5 text-muted-ink leading-relaxed max-w-[56ch]">
               <p>
-                Our brand is built on a deep appreciation for the natural texture of genuine timber. 
-                We source eco-friendly hardwoods, hand-selecting every piece 
-                to ensure uniform grain quality and dependable durability
+              We believe every space should be as functional as it is beautiful. 
+              By understanding your vision and the way you live, we create bespoke 
+              interiors that maximise every inch of available space. It's where practicality 
+              meets design, resulting in timeless solutions tailored uniquely to you. 
               </p>
               <p>
-               From precise joint cuts to hand-sanded surfaces, 
-               our process is all about bringing out the wood’s natural character,
-               not covering it up.
+              Through thoughtful planning, precision craftsmanship, and an unwavering attention
+              to detail, we create bespoke spaces that are built to last—designed not only to
+              elevate your home but to enrich the way you experience it every day.
               </p>
             </div>
 

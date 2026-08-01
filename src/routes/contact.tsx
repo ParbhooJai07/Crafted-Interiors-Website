@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Phone, MessageCircle, Mail, MapPin } from "lucide-react";
+import { Phone, MessageCircle, Mail, MapPin, Instagram } from "lucide-react";
 import { useState } from "react";
 import { CONTACT } from "@/lib/contact";
 
@@ -83,6 +83,13 @@ function ContactPage() {
       value: CONTACT.email,
       href: CONTACT.mailHref,
     },
+    {
+      icon: Instagram,
+      label: "Instagram",
+      value: CONTACT.instagramDisplay,
+      href: CONTACT.instagramHref,
+      external: true,
+    },  
   ];
 
   return (
@@ -170,7 +177,7 @@ function ContactPage() {
                     className="w-full mt-2 bg-transparent border-b border-canvas/20 py-2.5 text-sm focus:outline-none focus:border-canvas transition-colors appearance-none"
                     defaultValue="Bespoke Kitchen"
                   >
-                    {["Bespoke Kitchen", "Wardrobe", "Architectural Joinery", "Library / Study", "Other"].map((o) => (
+                    {["Bespoke Kitchen", "Wardrobe", "Custom Work", "Study", "Other"].map((o) => (
                       <option key={o} className="bg-ink text-canvas">
                         {o}
                       </option>

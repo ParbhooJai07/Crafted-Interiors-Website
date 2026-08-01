@@ -8,7 +8,7 @@ export function SiteFooter() {
         <div className="md:col-span-2">
           <span className="font-serif text-2xl">Crafted Interiors</span>
           <p className="text-sm text-muted-ink mt-3 max-w-sm leading-relaxed">
-            Bespoke kitchens, wardrobes, and architectural joinery — hand-built
+            Bespoke kitchens, wardrobes, and custom works — hand-built
             for the homes that will hold them for generations.
           </p>
         </div>
@@ -31,6 +31,7 @@ export function SiteFooter() {
             <li><a href={CONTACT.telHref} className="hover:text-timber">{CONTACT.phone}</a></li>
             <li><a href={CONTACT.whatsappHref} target="_blank" rel="noreferrer" className="hover:text-timber">WhatsApp</a></li>
             <li><a href={CONTACT.mailHref} className="hover:text-timber break-all">{CONTACT.email}</a></li>
+            <li><a href={CONTACT.instagramHref} target="_blank" rel="noreferrer" className="hover:text-timber">{CONTACT.instagramDisplay}</a></li>
           </ul>
         </div>
       </div>
