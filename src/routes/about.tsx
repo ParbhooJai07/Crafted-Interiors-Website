@@ -25,9 +25,9 @@ export const Route = createFileRoute("/about")({
 
 const process = [
   { n: "01", title: "Conversation", copy: "We meet at your home to understand how you live and what the space needs to do." },
-  { n: "02", title: "Design", copy: "Detailed drawings, curated material samples, and a full-scale mock-up of every piece, long before any joint is cut." },
-  { n: "03", title: "Assembly", copy: "Hand-cut joinery meets machine precision where it counts, with hand-finished surfaces reserved for where it truly matters. All brought together through an assembly process that honors every stage of the build." },
-  { n: "04", title: "Install", copy: "Installation is handled by the very team who built your piece. No subcontractors, no unfamiliar faces. We're there from start to finish, ensuring every detail settles perfectly into your space." },
+  { n: "02", title: "Design", copy: "Detailed drawings, curated material samples, and a render of every piece." },
+  { n: "03", title: "Assembly", copy: "We assemble the piece at our workshop, taking all requirements into account to ensure that installation can run as smooth as possible." },
+  { n: "04", title: "Install", copy: "Installation is handled by the very team who built your piece. We are there from start to finish, ensuring every detail settles perfectly into your space." },
 ] as const;
 
 function AboutPage() {
@@ -45,15 +45,13 @@ function AboutPage() {
             <div className="mt-8 space-y-5 text-muted-ink leading-relaxed max-w-[56ch]">
               <p>
                Crafted Interiors was born from a single belief: exceptional cabinetry should perform as beautifully as it appears. 
-               You recognize it in the nuances - the buttery, weighted pull of a drawer engineered to glide with zero resistance. 
-               The absolute stillness when a door closes, seamless and hushed. 
-               The intentional continuity of wood grain, flowing uninterrupted from one cabinet to the next, as if it were always meant to be that way.
+               You notice it in the details. It's the smooth, heavy glide of a perfectly weighted drawer or the total silence when a door closes against its frame.
               </p>
               <p>
                 We are a dedicated team of designers and cabinetmakers who pour our expertise into every detail. 
                 This isn’t mass production, it’s personal. 
-                Each project remains in the same skilled hands from the first pencil stroke to the final placement in your space. 
-                No handoffs, no shortcuts. Just a relentless commitment to quality, start to finish.
+                Each project remains in the same skilled hands from the consultation to the final placement in your space. 
+                No handoffs, no shortcuts. Just a relentless commitment to quality, from start to finish.
               </p>
             </div>
           </div>
@@ -98,8 +96,8 @@ function AboutPage() {
                Material is everything to us. We make sure that the board is the best quality available.
               </p>
               <p>
-                When it comes to hardware like hinges, runners, and fittings, we don’t cut corners. 
-                We only use pieces from the exact same makers we’ve known and trusted for over a decade. 
+                When it comes to hardware such as hinges, runners, and fittings, we don’t cut corners. 
+                We use hardware and equipment from the makers we’ve known and built trust with. 
                 We never choose a component just to save a bit of money. 
                 If it goes into your cabinets, it's because it's built to last.
               </p>
