@@ -24,7 +24,7 @@ export const Route = createFileRoute("/about")({
 });
 
 const process = [
-  { n: "01", title: "Conversation", copy: "We meet at your home to understand how you live and what the space needs to do." },
+  { n: "01", title: "Conversation", copy: "We meet with you to understand what it is you want and what the space needs to do." },
   { n: "02", title: "Design", copy: "Detailed drawings, curated material samples, and a render of every piece." },
   { n: "03", title: "Assembly", copy: "We assemble the piece at our workshop, taking all requirements into account to ensure that installation can run as smooth as possible." },
   { n: "04", title: "Install", copy: "Installation is handled by the very team who built your piece. We are there from start to finish, ensuring every detail settles perfectly into your space." },
