@@ -77,9 +77,10 @@ function ServicesPage() {
             Cabinetry, considered.
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-muted-ink leading-relaxed">
-            From a single fitted wardrobe to a full architectural fit-out, every
-            project is drawn, prototyped, and hand-built in our workshop before
-            installation.
+            Whether we’re crafting a single fitted wardrobe 
+            or managing a full architectural fit-out, we do things properly. 
+            Every piece is carefully drawn, prototyped,
+            and built by hand right here in our workshop before we bring it to your space
           </p>
         </div>
       </section>
@@ -131,7 +132,7 @@ function ServicesPage() {
             Have a project in mind?
           </h2>
           <p className="mt-4 text-canvas/70">
-            Book a consultation at our workshop or your residence.
+            Book a consultation at our workshop or your home.
           </p>
           <Link
             to="/contact"
