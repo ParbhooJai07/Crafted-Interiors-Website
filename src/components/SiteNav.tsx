@@ -6,6 +6,7 @@ import craftedIntLogo from "../assets/CraftedIntLogo.png";
 const links = [
   { to: "/", label: "Home" },
   { to: "/services", label: "Services" },
+  { to: "/design", label: "Design" },
   { to: "/portfolio", label: "Portfolio" },
   { to: "/about", label: "About" },
   { to: "/contact", label: "Contact" },
