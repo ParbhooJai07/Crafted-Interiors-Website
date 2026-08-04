@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import kitchen1 from "@/assets/kitchen-1.jpeg";
-import kitchen2 from "@/assets/kitchen-2.jpeg";
+import kitchen2 from "@/assets/kitchen-2.jpg";
 import kitchen3 from "@/assets/kitchen-3.jpeg";
 import kitchen5 from "@/assets/kitchen-5.jpeg";
 import kitchen6 from "@/assets/kitchen-6.jpeg";
