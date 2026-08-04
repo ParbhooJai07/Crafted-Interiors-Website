@@ -42,10 +42,10 @@ export function SiteFooter() {
             <p>© 2023 Crafted Interiors. All rights reserved.</p>
             
             {/* Middle Section (Logo + Text) */}
-            <div className="flex items-center gap-2">
+            {/* <div className="flex items-center gap-2">
               <img src={logo} alt="FiveStack Logo" className="h-4 w-4 object-contain" />
               <p>powered by FiveStack studios</p>
-            </div>
+            </div> */}
             
               {/* Right Section */}
             <p>Bespoke joinery &amp; cabinetry</p>

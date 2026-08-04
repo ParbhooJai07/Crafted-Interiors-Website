@@ -1,12 +1,15 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroPoster from "@/assets/hero-poster-movie.mp4";
-import workshop from "@/assets/workshop.jpg";
-import kitchen1 from "@/assets/kitchen-grey-plank.jpeg";
-import kitchen2 from "@/assets/kitchen-charcoal-island.jpeg";
-import kitchen3 from "@/assets/kitchen-oak-tower.jpeg";
-import hardware1 from "@/assets/hardware-handle-detail.jpeg";
-import lounge1 from "@/assets/lounge-tv-console.jpeg";
-import wardrobe1 from "@/assets/wardrobe-white-hallway.jpeg";
+import backdrop from "@/assets/CraftedIntLogoBackdrop.png";
+import kitchen1 from "@/assets/kitchen-1.jpeg";
+import kitchen2 from "@/assets/kitchen-2.jpeg";
+import kitchen3 from "@/assets/kitchen-3.jpeg";
+import kitchen4 from "@/assets/kitchen-4.jpeg";
+import kitchen5 from "@/assets/kitchen-5.jpeg";
+import hardware1 from "@/assets/hardware-1.jpeg";
+import study2 from "@/assets/study-2.jpeg";
+import custom3 from "@/assets/custom-3.jpeg";
+import wardrobe1 from "@/assets/wardrobe-1.jpeg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -15,13 +18,13 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Honest materials, precision joinery. Bespoke kitchens, wardrobes and built-in cabinetry hand-crafted in our workshop.",
+          "Honest materials, precision craft. Bespoke kitchens, wardrobes and built-in cabinetry hand-crafted in our workshop.",
       },
       { property: "og:title", content: "Crafted Interiors — Bespoke Kitchens & Cabinetry" },
       {
         property: "og:description",
         content:
-          "Honest materials, precision joinery. Bespoke kitchens, wardrobes and built-in cabinetry hand-crafted in our workshop.",
+          "Honest materials, precision craft. Bespoke kitchens, wardrobes and built-in cabinetry hand-crafted in our workshop.",
       },
     ],
   }),
@@ -85,7 +88,7 @@ function HomePage() {
                 The Craft
               </span>
               <h2 className="font-serif text-4xl md:text-5xl mt-3 max-w-[24ch]">
-                Mastery in every grain.
+                Any Project, Any Time.
               </h2>
             </div>
             <Link
@@ -109,7 +112,7 @@ function HomePage() {
                 copy: "Beautifully designed wardrobes for homes that value both form and function.",
               },
               {
-                img: lounge1,
+                img: custom3,
                 title: "Custom Works",
                 copy: "Fixtures from vanities and entertainment units to bar areas that add soul to your home.",
               },
@@ -150,16 +153,16 @@ function HomePage() {
 
           <div className="grid md:grid-cols-12 gap-5 md:gap-6">
             <figure className="md:col-span-8 aspect-[16/10] rounded-lg overflow-hidden ring-1 ring-ink/5 bg-stone">
-              <img src={kitchen2} alt="Hyde Park kitchen" loading="lazy" width={1280} height={800} className="w-full h-full object-cover" />
+              <img src={kitchen5} alt="" loading="lazy" width={1280} height={800} className="w-full h-full object-cover" />
             </figure>
             <figure className="md:col-span-4 aspect-square rounded-lg overflow-hidden ring-1 ring-ink/5 bg-stone">
-              <img src={hardware1} alt="Brass hardware detail" loading="lazy" width={800} height={800} className="w-full h-full object-cover" />
+              <img src={study2} alt="" loading="lazy" width={800} height={800} className="w-full h-full object-cover" />
             </figure>
             <figure className="md:col-span-5 aspect-[4/5] rounded-lg overflow-hidden ring-1 ring-ink/5 bg-stone">
-              <img src={kitchen3} alt="Mahogany library" loading="lazy" width={800} height={1200} className="w-full h-full object-cover" />
+              <img src={kitchen3} alt="" loading="lazy" width={800} height={1200} className="w-full h-full object-cover" />
             </figure>
             <figure className="md:col-span-7 aspect-[16/10] rounded-lg overflow-hidden ring-1 ring-ink/5 bg-stone">
-              <img src={lounge1} alt="Architectural wood panelling" loading="lazy" width={1024} height={1024} className="w-full h-full object-cover" />
+              <img src={custom3} alt="" loading="lazy" width={1024} height={1024} className="w-full h-full object-cover" />
             </figure>
           </div>
         </div>
@@ -185,21 +188,11 @@ function HomePage() {
               elevate your home but to enrich the way you experience it every day.
               </p>
             </div>
-
-            <figure className="mt-10 p-8 bg-stone rounded-lg ring-1 ring-ink/5">
-              <blockquote className="font-serif italic text-xl leading-snug">
-                "The solid weight of the doors and the completely silent hinges 
-                speak volumes about the craftsmanship behind Crafted Interiors.”
-              </blockquote>
-              <figcaption className="mt-4 text-xs font-medium uppercase tracking-widest text-muted-ink">
-                — David Chen, Architect
-              </figcaption>
-            </figure>
           </div>
           <div className="aspect-[4/5] rounded-lg overflow-hidden ring-1 ring-ink/5 bg-stone">
             <img
-              src={workshop}
-              alt="Master carpenter using a hand plane"
+              src={backdrop}
+              alt="Crafted Interiors Backdrop"
               loading="lazy"
               width={1024}
               height={1280}

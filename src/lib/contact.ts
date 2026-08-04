@@ -6,7 +6,7 @@ export const CONTACT = {
   whatsappDisplay: "+27 63 468 2958",
   email: "Ishal.crafted@gmail.com",
   instagramHref: "https://instagram.com/crafted.interiors_",
-  instagramDisplay: "Instagram",
+  instagramDisplay: "crafted.interiors_",
   address: "Lenasia",
   get telHref() {
     return `tel:${this.phoneRaw}`;

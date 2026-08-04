@@ -1,10 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import kitchen1 from "@/assets/kitchen-grey-plank.jpeg";
-import kitchen3 from "@/assets/kitchen-oak-tower.jpeg";
-import study2 from "@/assets/vanity-mirror-desk.jpeg";
-import lounge1 from "@/assets/lounge-tv-console.jpeg";
-import wardrobe1 from "@/assets/wardrobe-white-hallway.jpeg";
-import joinery1 from "@/assets/joinery-outdoor-bar.jpeg";
+import kitchen6 from "@/assets/kitchen-6.jpeg";
+import study2 from "@/assets/study-2.jpeg";
+import custom3 from "@/assets/custom-3.jpeg";
+import wardrobe1 from "@/assets/wardrobe-1.jpeg";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
@@ -13,13 +11,13 @@ export const Route = createFileRoute("/services")({
       {
         name: "description",
         content:
-          "Bespoke kitchens, signature wardrobes, architectural joinery, pantries, vanities and libraries — each hand-built to order.",
+          "Bespoke kitchens, signature wardrobes, pantries, vanities and custom works — each hand-built to order.",
       },
       { property: "og:title", content: "Services — Crafted Interiors" },
       {
         property: "og:description",
         content:
-          "Bespoke kitchens, signature wardrobes, architectural joinery, pantries, vanities and libraries — each hand-built to order.",
+          "Bespoke kitchens, signature wardrobes, pantries, vanities and custom works — each hand-built to order.",
       },
     ],
   }),
@@ -28,40 +26,28 @@ export const Route = createFileRoute("/services")({
 
 const services = [
   {
-    img: kitchen1,
+    img: kitchen6,
     title: "Bespoke Kitchens",
-    copy: "Full-scale kitchen design from concept through installation. Integrated appliances, dovetailed drawers, custom larder units and finishes hand-selected for your palette.",
-    details: ["Kitchen islands & butlers pantries", "Integrated appliance housing", "Solid timber & hand-painted finishes"],
+    copy: "Full-scale kitchen design from concept through installation. Built for integrated appliances, and finishes hand-selected for your palette.",
+    details: ["Kitchen islands & butlers pantries", "Integrated appliance housing", "Floor-to-ceiling cabinetry"],
   },
   {
     img: wardrobe1,
     title: "Signature Wardrobes",
-    copy: "Walk-in dressing rooms and reach-in wardrobes engineered around your wardrobe, with soft-close mechanisms, integrated lighting and internal joinery.",
-    details: ["Walk-in dressing rooms", "Integrated LED lighting", "Custom drawer & shoe systems"],
-  },
-  {
-    img: lounge1,
-    title: "Architectural Joinery",
-    copy: "Room-defining built-ins — panelling, media walls, staircases and full library rooms — designed in dialogue with your architect or interior designer.",
-    details: ["Wall panelling & wainscoting", "Media & entertainment units", "Bespoke doors & staircases"],
-  },
-  {
-    img: joinery1,
-    title: "Walk-in Pantries",
-    copy: "Chef-grade organisation with adjustable shelving, integrated small appliances, and dedicated stone or timber worktops for prep.",
-    details: ["Adjustable oak shelving", "Integrated appliance stations", "Custom crate & jar systems"],
+    copy: "Walk-in dressing rooms and reach-in wardrobes engineered around your wardrobe, with soft-close mechanisms built for utilising space.",
+    details: ["Walk-in dressing rooms", "Spacious wardrobes", "Custom drawer & shoe systems"],
   },
   {
     img: study2,
-    title: "Bathroom Vanities",
-    copy: "Moisture-resilient hardwood construction with stone or ceramic tops, integrated lighting mirrors and custom brass hardware.",
-    details: ["Marine-grade timber", "Stone & ceramic tops", "Concealed plumbing housings"],
+    title: "Studies",
+    copy: "Integrated desks and reading nooks — spaces built for a lifetime of productivity, inspiration and creativity.",
+    details: ["Built-in bookshelves & display units", "Integrated desks & seating", "Cable management solutions"],
   },
   {
-    img: kitchen3,
-    title: "Libraries & Studies",
-    copy: "Floor-to-ceiling shelving with sliding ladders, integrated desks and reading nooks — spaces built for a lifetime of collecting.",
-    details: ["Sliding library ladders", "Integrated desks & seating", "Solid mahogany & oak"],
+    img: custom3,
+    title: "Custom works",
+    copy: "Room-defining built-ins — panelling, media walls, bar areas, vanities, pantries — designed in dialogue with your architect or interior designer with accomodations for integrated lighting.",
+    details: ["Wall panelling", "Media, entertainment & units", "Bathroom vanities"],
   },
 ] as const;
 
@@ -74,12 +60,12 @@ function ServicesPage() {
             What we make
           </span>
           <h1 className="font-serif text-5xl md:text-7xl mt-4 max-w-[18ch] leading-[1.05]">
-            Cabinetry, considered.
+            Interiors, reimagined.
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-muted-ink leading-relaxed">
             Whether we’re crafting a single fitted wardrobe 
             or managing a full architectural fit-out, we do things properly. 
-            Every piece is carefully drawn, prototyped,
+            Every piece is carefully designed,
             and built by hand right here in our workshop before we bring it to your space
           </p>
         </div>
@@ -132,13 +118,13 @@ function ServicesPage() {
             Have a project in mind?
           </h2>
           <p className="mt-4 text-canvas/70">
-            Book a consultation
+            Book a consultation.
           </p>
           <Link
             to="/contact"
             className="mt-8 inline-flex px-6 py-3 bg-canvas text-ink rounded-full text-sm font-medium hover:bg-timber hover:text-canvas transition-colors"
           >
-            Get in touch.
+            Get in touch
           </Link>
         </div>
       </section>
