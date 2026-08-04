@@ -6,10 +6,10 @@ import kitchen4 from "@/assets/kitchen-4.jpeg";
 import study1 from "@/assets/study-1.jpeg";
 import study2 from "@/assets/study-2.jpeg";
 import hardware1 from "@/assets/hardware-1.jpeg";
-import lounge1 from "@/assets/lounge-1.jpeg";
+import custom1 from "@/assets/custom-1.jpeg";
+import custom2 from "@/assets/custom-2.jpeg";
 import wardrobe1 from "@/assets/wardrobe-1.jpeg";
 import wardrobe2 from "@/assets/wardrobe-2.jpeg";
-import joinery1 from "@/assets/joinery-1.jpeg";
 
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
@@ -60,8 +60,8 @@ const categories = [
   {
     name: "Custom Works",
     projects: [
-      { img: joinery1, title: "The Baker's Pantry", span: "md:col-span-5", aspect: "aspect-[4/5]" },
-      { img: lounge1, title: "Panelled Living Room", span: "md:col-span-7", aspect: "aspect-[16/10]" },
+      { img: custom1, title: "The Baker's Pantry", span: "md:col-span-5", aspect: "aspect-[4/5]" },
+      { img: custom2, title: "Panelled Living Room", span: "md:col-span-7", aspect: "aspect-[16/10]" },
     ],
   },
 ] as const;
