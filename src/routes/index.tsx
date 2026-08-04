@@ -188,16 +188,6 @@ function HomePage() {
               elevate your home but to enrich the way you experience it every day.
               </p>
             </div>
-
-            <figure className="mt-10 p-8 bg-stone rounded-lg ring-1 ring-ink/5">
-              <blockquote className="font-serif italic text-xl leading-snug">
-                "The solid weight of the doors and the completely silent hinges 
-                speak volumes about the craftsmanship behind Crafted Interiors.”
-              </blockquote>
-              <figcaption className="mt-4 text-xs font-medium uppercase tracking-widest text-muted-ink">
-                — David Chen, Architect
-              </figcaption>
-            </figure>
           </div>
           <div className="aspect-[4/5] rounded-lg overflow-hidden ring-1 ring-ink/5 bg-stone">
             <img
