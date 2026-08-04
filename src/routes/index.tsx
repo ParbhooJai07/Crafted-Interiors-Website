@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroPoster from "@/assets/hero-poster-movie.mp4";
-import workshop from "@/assets/workshop.jpg";
+import backdrop from "@/assets/CraftedIntLogoBackdrop.png";
 import kitchen1 from "@/assets/kitchen-1.jpeg";
 import kitchen2 from "@/assets/kitchen-2.jpeg";
 import kitchen3 from "@/assets/kitchen-3.jpeg";
@@ -18,13 +18,13 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Honest materials, precision joinery. Bespoke kitchens, wardrobes and built-in cabinetry hand-crafted in our workshop.",
+          "Honest materials, precision craft. Bespoke kitchens, wardrobes and built-in cabinetry hand-crafted in our workshop.",
       },
       { property: "og:title", content: "Crafted Interiors — Bespoke Kitchens & Cabinetry" },
       {
         property: "og:description",
         content:
-          "Honest materials, precision joinery. Bespoke kitchens, wardrobes and built-in cabinetry hand-crafted in our workshop.",
+          "Honest materials, precision craft. Bespoke kitchens, wardrobes and built-in cabinetry hand-crafted in our workshop.",
       },
     ],
   }),
@@ -88,7 +88,7 @@ function HomePage() {
                 The Craft
               </span>
               <h2 className="font-serif text-4xl md:text-5xl mt-3 max-w-[24ch]">
-                Mastery in every grain.
+                Any Project, Any Time.
               </h2>
             </div>
             <Link
@@ -191,8 +191,8 @@ function HomePage() {
           </div>
           <div className="aspect-[4/5] rounded-lg overflow-hidden ring-1 ring-ink/5 bg-stone">
             <img
-              src={workshop}
-              alt="Master carpenter using a hand plane"
+              src={backdrop}
+              alt="Crafted Interiors Backdrop"
               loading="lazy"
               width={1024}
               height={1280}
