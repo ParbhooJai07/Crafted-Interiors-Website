@@ -141,7 +141,7 @@ function ContactPage() {
                   <p className="text-[10px] uppercase tracking-widest text-muted-ink">
                     Workshop
                   </p>
-                  <p className="mt-1 text-base leading-relaxed">{CONTACT.address}</p>
+                  <p className="mt-1 text-base leading-relaxed">{CONTACT.address} - Open to work in Gauteng.</p>
                   <p className="mt-3 text-xs text-muted-ink"></p>
                 </div>
               </div>
