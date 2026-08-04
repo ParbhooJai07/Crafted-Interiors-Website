@@ -37,10 +37,19 @@ export function SiteFooter() {
           </ul>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-ink/5 flex flex-col md:flex-row justify-between items-center gap-3 text-[11px] uppercase tracking-widest text-muted-ink">
-        <p>© 2023 Crafted Interiors. All rights reserved.</p>
-        <p>Bespoke joinery. &amp; cabinetry</p>
-      </div>
+    <div className="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-ink/5 flex flex-col md:flex-row justify-between items-center gap-3 text-[11px] uppercase tracking-widest text-muted-ink">
+            {/* Left Section */}
+            <p>© 2023 Crafted Interiors. All rights reserved.</p>
+            
+            {/* Middle Section (Logo + Text) */}
+            <div className="flex items-center gap-2">
+              <img src={logo} alt="FiveStack Logo" className="h-4 w-4 object-contain" />
+              <p>powered by FiveStack studios</p>
+            </div>
+            
+              {/* Right Section */}
+            <p>Bespoke joinery &amp; cabinetry</p>
+          </div>
     </footer>
   );
 }

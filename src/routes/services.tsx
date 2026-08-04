@@ -132,7 +132,7 @@ function ServicesPage() {
             Have a project in mind?
           </h2>
           <p className="mt-4 text-canvas/70">
-            Book a consultation at our workshop or your home.
+            Book a consultation
           </p>
           <Link
             to="/contact"
