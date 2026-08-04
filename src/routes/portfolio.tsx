@@ -1,15 +1,15 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import kitchen1 from "@/assets/kitchen-1.jpeg";
-import kitchen2 from "@/assets/kitchen-2.jpeg";
-import kitchen3 from "@/assets/kitchen-3.jpeg";
-import kitchen4 from "@/assets/kitchen-4.jpeg";
-import study1 from "@/assets/study-1.jpeg";
-import study2 from "@/assets/study-2.jpeg";
-import hardware1 from "@/assets/hardware-1.jpeg";
-import lounge1 from "@/assets/lounge-1.jpeg";
-import wardrobe1 from "@/assets/wardrobe-1.jpeg";
-import wardrobe2 from "@/assets/wardrobe-2.jpeg";
-import joinery1 from "@/assets/joinery-1.jpeg";
+import kitchen1 from "@/assets/kitchen-grey-plank.jpeg";
+import kitchen2 from "@/assets/kitchen-charcoal-island.jpeg";
+import kitchen3 from "@/assets/kitchen-oak-tower.jpeg";
+import kitchen4 from "@/assets/kitchen-noir-dining.jpeg";
+import study1 from "@/assets/study-final.jpeg";
+import study2 from "@/assets/vanity-mirror-desk.jpeg";
+import hardware1 from "@/assets/hardware-handle-detail.jpeg";
+import lounge1 from "@/assets/lounge-tv-console.jpeg";
+import wardrobe1 from "@/assets/wardrobe-white-hallway.jpeg";
+import wardrobe2 from "@/assets/wardrobe-gloss-vanity.jpeg";
+import joinery1 from "@/assets/joinery-outdoor-bar.jpeg";
 
 export const Route = createFileRoute("/portfolio")({
   head: () => ({

@@ -1,12 +1,12 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroPoster from "@/assets/hero-poster-movie.mp4";
 import workshop from "@/assets/workshop.jpg";
-import kitchen1 from "@/assets/kitchen-1.jpeg";
-import kitchen2 from "@/assets/kitchen-2.jpeg";
-import kitchen3 from "@/assets/kitchen-3.jpeg";
-import hardware1 from "@/assets/hardware-1.jpeg";
-import lounge1 from "@/assets/lounge-1.jpeg";
-import wardrobe1 from "@/assets/wardrobe-1.jpeg";
+import kitchen1 from "@/assets/kitchen-grey-plank.jpeg";
+import kitchen2 from "@/assets/kitchen-charcoal-island.jpeg";
+import kitchen3 from "@/assets/kitchen-oak-tower.jpeg";
+import hardware1 from "@/assets/hardware-handle-detail.jpeg";
+import lounge1 from "@/assets/lounge-tv-console.jpeg";
+import wardrobe1 from "@/assets/wardrobe-white-hallway.jpeg";
 
 export const Route = createFileRoute("/")({
   head: () => ({

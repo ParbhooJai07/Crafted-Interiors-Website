@@ -3,7 +3,11 @@
     "allow": [
       "Bash(rm -f .tmp-screenshot.mjs .tmp-portfolio-full.png .tmp-portfolio-full2.png .tmp-portfolio-full3.png .tmp-check.png)",
       "Bash(lsof -ti:3000 -sTCP:LISTEN)",
-      "Bash(xargs -r kill)"
+      "Bash(xargs -r kill)",
+      "Bash(pkill -f \"vite dev\")",
+      "Bash(git mv *)",
+      "Bash(npx vite *)",
+      "Bash(curl -s http://localhost:5185/design -o /dev/null -w \"%{http_code}\\\\n\")"
     ]
   }
 }

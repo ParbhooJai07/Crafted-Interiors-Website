@@ -1,13 +1,14 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import designSketch from "@/assets/drawing-study-1.jpeg";
-import designRender from "@/assets/render-study-1.jpeg";
-import designFinal from "@/assets/study-1.jpeg";
-import designRenderWardrobe from "@/assets/design-render-wardrobe.jpg";
-import designDrawingLibrary from "@/assets/design-drawing-library.jpg";
-import designRenderIsland from "@/assets/design-render-island.jpg";
-import projectPantry from "@/assets/kitchen-1.jpeg";
-import projectVanity from "@/assets/study-1.jpeg";
-import projectLibrary from "@/assets/wardrobe-1.jpeg";
+import designSketch from "@/assets/study-drawing.jpeg";
+import designRender from "@/assets/study-render.jpeg";
+import designFinal from "@/assets/study-final.jpeg";
+import kitchenSketch from "@/assets/kitchen-elevation-a-drawing.jpg";
+import kitchenRender from "@/assets/kitchen-elevation-a-render.jpg";
+import libraryDrawing from "@/assets/design-drawing-library.jpg";
+import islandRender from "@/assets/design-render-island.jpg";
+import wardrobeRender from "@/assets/design-render-wardrobe.jpg";
+import libraryFinal from "@/assets/project-library.jpg";
+import kitchenFinal from "@/assets/kitchen-grey-plank.jpeg";
 
 export const Route = createFileRoute("/design")({
   head: () => ({
@@ -64,14 +65,17 @@ const stages = [
 ] as const;
 
 const gallery = [
-  { img: designDrawingLibrary, title: "Cotswold Library", tag: "Drawing", span: "md:col-span-4", aspect: "aspect-[4/5]", w: 1024, h: 1280 },
-  { img: designRenderIsland, title: "Skylight Island Kitchen", tag: "Render", span: "md:col-span-8", aspect: "aspect-[16/10]", w: 1280, h: 960 },
-  { img: designRenderWardrobe, title: "Master Dressing Room", tag: "Render", span: "md:col-span-5", aspect: "aspect-[4/5]", w: 1024, h: 1280 },
-  { img: projectLibrary, title: "Library, as built", tag: "Final", span: "md:col-span-7", aspect: "aspect-[16/10]", w: 1280, h: 960 },
-  { img: designSketch, title: "Elevation A, Hyde Park", tag: "Drawing", span: "md:col-span-7", aspect: "aspect-[16/10]", w: 1280, h: 960 },
-  { img: projectPantry, title: "The Baker's Pantry", tag: "Final", span: "md:col-span-5", aspect: "aspect-[4/5]", w: 1280, h: 960 },
-  { img: designRender, title: "Walnut Kitchen Study", tag: "Render", span: "md:col-span-6", aspect: "aspect-[4/3]", w: 1280, h: 960 },
-  { img: projectVanity, title: "Oak & Travertine Vanity", tag: "Final", span: "md:col-span-6", aspect: "aspect-[4/3]", w: 1280, h: 960 },
+  { drawing: kitchenSketch, render: kitchenRender, title: "Elevation A Kitchen" },
+  { drawing: designSketch, render: designRender, title: "Home Office" },
+] as const;
+
+const otherDesigns = [
+  { img: libraryDrawing, title: "Library Bookcase — Drawing", span: "md:col-span-4", aspect: "aspect-[4/5]" },
+  { img: islandRender, title: "Skylight Island Kitchen — Render", span: "md:col-span-8", aspect: "aspect-[16/10]" },
+  { img: wardrobeRender, title: "Dressing Room — Render", span: "md:col-span-5", aspect: "aspect-[4/5]" },
+  { img: libraryFinal, title: "Library, as built", span: "md:col-span-7", aspect: "aspect-[16/10]" },
+  { img: kitchenFinal, title: "Kitchen, as built", span: "md:col-span-5", aspect: "aspect-[4/5]" },
+  { img: designFinal, title: "Home Office, as built", span: "md:col-span-7", aspect: "aspect-[16/10]" },
 ] as const;
 
 function DesignPage() {
@@ -146,24 +150,60 @@ function DesignPage() {
             Previous designs and renders.
           </h2>
 
-          <div className="mt-12 grid md:grid-cols-12 gap-5 md:gap-6">
-            {gallery.map((g) => (
+          <div className="mt-12 space-y-5 md:space-y-6">
+            {gallery.map((pair, i) => (
+              <div key={i} className="grid md:grid-cols-2 gap-5 md:gap-6">
+                <figure className="group">
+                  <div className="aspect-[4/3] rounded-lg overflow-hidden ring-1 ring-ink/5 bg-canvas">
+                    <img
+                      src={pair.drawing}
+                      alt={`${pair.title} — drawing`}
+                      loading="lazy"
+                      width={1280}
+                      height={960}
+                      className="w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.03]"
+                    />
+                  </div>
+                  <figcaption className="mt-4 flex justify-between items-baseline gap-4">
+                    <span className="font-serif text-lg">{pair.title}</span>
+                    <span className="text-[10px] uppercase tracking-widest text-muted-ink">Drawing</span>
+                  </figcaption>
+                </figure>
+                <figure className="group">
+                  <div className="aspect-[4/3] rounded-lg overflow-hidden ring-1 ring-ink/5 bg-canvas">
+                    <img
+                      src={pair.render}
+                      alt={`${pair.title} — render`}
+                      loading="lazy"
+                      width={1280}
+                      height={960}
+                      className="w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.03]"
+                    />
+                  </div>
+                  <figcaption className="mt-4 flex justify-between items-baseline gap-4">
+                    <span className="font-serif text-lg">{pair.title}</span>
+                    <span className="text-[10px] uppercase tracking-widest text-muted-ink">Render</span>
+                  </figcaption>
+                </figure>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-5 md:mt-6 grid md:grid-cols-12 gap-5 md:gap-6">
+            {otherDesigns.map((g) => (
               <figure key={g.title} className={`${g.span} group`}>
                 <div className={`${g.aspect} rounded-lg overflow-hidden ring-1 ring-ink/5 bg-canvas`}>
                   <img
                     src={g.img}
-                    alt={`${g.tag} — ${g.title}`}
+                    alt={g.title}
                     loading="lazy"
-                    width={g.w}
-                    height={g.h}
+                    width={1280}
+                    height={960}
                     className="w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.03]"
                   />
                 </div>
-                <figcaption className="mt-4 flex justify-between items-baseline gap-4">
+                <figcaption className="mt-4">
                   <span className="font-serif text-lg">{g.title}</span>
-                  <span className="text-[10px] uppercase tracking-widest text-muted-ink">
-                    {g.tag}
-                  </span>
                 </figcaption>
               </figure>
             ))}
