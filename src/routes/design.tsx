@@ -72,10 +72,10 @@ const gallery = [
 const otherDesigns = [
   { img: libraryDrawing, title: "Library Bookcase — Drawing", span: "md:col-span-4", aspect: "aspect-[4/5]" },
   { img: islandRender, title: "Skylight Island Kitchen — Render", span: "md:col-span-8", aspect: "aspect-[16/10]" },
-  { img: wardrobeRender, title: "Dressing Room — Render", span: "md:col-span-5", aspect: "aspect-[4/5]" },
-  { img: libraryFinal, title: "Library, as built", span: "md:col-span-7", aspect: "aspect-[16/10]" },
-  { img: kitchenFinal, title: "Kitchen, as built", span: "md:col-span-5", aspect: "aspect-[4/5]" },
-  { img: designFinal, title: "Home Office, as built", span: "md:col-span-7", aspect: "aspect-[16/10]" },
+  { img: wardrobeRender, title: "Dressing Room — Render", span: "md:col-span-6", aspect: "aspect-[4/3]" },
+  { img: libraryFinal, title: "Library, as built", span: "md:col-span-6", aspect: "aspect-[4/3]" },
+  { img: kitchenFinal, title: "Kitchen, as built", span: "md:col-span-6", aspect: "aspect-[4/3]" },
+  { img: designFinal, title: "Home Office, as built", span: "md:col-span-6", aspect: "aspect-[4/3]" },
 ] as const;
 
 function DesignPage() {
