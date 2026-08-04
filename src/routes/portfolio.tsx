@@ -36,32 +36,32 @@ const categories = [
   {
     name: "Kitchens",
     projects: [
-      { img: kitchen2, title: "The Hyde Park Kitchen", location: "Johannesburg · 2024", span: "md:col-span-8", aspect: "aspect-[16/10]" },
-      { img: hardware1, title: "Brass & Walnut Detail", location: "Detail · 2024", span: "md:col-span-4", aspect: "aspect-square" },
-      { img: kitchen4, title: "The Noir Kitchen", location: "Fresnaye · 2024", span: "md:col-span-4", aspect: "aspect-[3/4]" },
-      { img: kitchen3, title: "The Cotswold Kitchen", location: "England · 2023", span: "md:col-span-8", aspect: "aspect-[16/10]" },
-      { img: kitchen1, title: "Joinery Detail, Workshop", location: "Workshop · 2022", span: "md:col-span-12", aspect: "aspect-[21/9]" },
+      { img: kitchen2, title: "The Hyde Park Kitchen", span: "md:col-span-8", aspect: "aspect-[16/10]" },
+      { img: hardware1, title: "Brass & Walnut Detail", span: "md:col-span-4", aspect: "aspect-square" },
+      { img: kitchen4, title: "The Noir Kitchen", span: "md:col-span-4", aspect: "aspect-[3/4]" },
+      { img: kitchen3, title: "The Cotswold Kitchen", span: "md:col-span-8", aspect: "aspect-[16/10]" },
+      { img: kitchen1, title: "Joinery Detail, Workshop", span: "md:col-span-12", aspect: "aspect-[21/9]" },
     ],
   },
   {
     name: "Wardrobes",
     projects: [
-      { img: wardrobe1, title: "Master Dressing Room", location: "Camps Bay · 2023", span: "md:col-span-6", aspect: "aspect-[4/5]" },
-      { img: wardrobe2, title: "His & Hers Wardrobe Wall", location: "Clifton · 2024", span: "md:col-span-6", aspect: "aspect-[4/5]" },
+      { img: wardrobe1, title: "Master Dressing Room", span: "md:col-span-6", aspect: "aspect-[4/5]" },
+      { img: wardrobe2, title: "His & Hers Wardrobe Wall", span: "md:col-span-6", aspect: "aspect-[4/5]" },
     ],
   },
   {
     name: "Studies",
     projects: [
-      { img: study1, title: "The Vineyard Estate", location: "Constantia · 2023", span: "md:col-span-7", aspect: "aspect-[16/10]" },
-      { img: study2, title: "Oak & Travertine Vanity", location: "Higgovale · 2022", span: "md:col-span-5", aspect: "aspect-[4/5]" },
+      { img: study1, title: "The Vineyard Estate", span: "md:col-span-7", aspect: "aspect-[16/10]" },
+      { img: study2, title: "Oak & Travertine Vanity", span: "md:col-span-5", aspect: "aspect-[4/5]" },
     ],
   },
   {
     name: "Custom Works",
     projects: [
-      { img: joinery1, title: "The Baker's Pantry", location: "Bishopscourt · 2023", span: "md:col-span-5", aspect: "aspect-[4/5]" },
-      { img: lounge1, title: "Panelled Living Room", location: "Bantry Bay · 2022", span: "md:col-span-7", aspect: "aspect-[16/10]" },
+      { img: joinery1, title: "The Baker's Pantry", span: "md:col-span-5", aspect: "aspect-[4/5]" },
+      { img: lounge1, title: "Panelled Living Room", span: "md:col-span-7", aspect: "aspect-[16/10]" },
     ],
   },
 ] as const;
@@ -101,12 +101,6 @@ function PortfolioPage() {
                         className="w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.03]"
                       />
                     </div>
-                    <figcaption className="mt-4 flex justify-between items-baseline">
-                      <span className="font-serif text-lg">{p.title}</span>
-                      <span className="text-[10px] uppercase tracking-widest text-muted-ink">
-                        {p.location}
-                      </span>
-                    </figcaption>
                   </figure>
                 ))}
               </div>
