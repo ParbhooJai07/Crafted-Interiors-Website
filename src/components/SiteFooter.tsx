@@ -19,6 +19,7 @@ export function SiteFooter() {
           </h4>
           <ul className="space-y-2 text-sm">
             <li><Link to="/services" className="hover:text-timber">Services</Link></li>
+            <li><Link to="/design" className="hover:text-timber">Design</Link></li>
             <li><Link to="/portfolio" className="hover:text-timber">Portfolio</Link></li>
             <li><Link to="/about" className="hover:text-timber">About</Link></li>
             <li><Link to="/contact" className="hover:text-timber">Contact</Link></li>
@@ -36,20 +37,10 @@ export function SiteFooter() {
           </ul>
         </div>
       </div>
-<div className="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-ink/5 flex flex-col md:flex-row justify-between items-center gap-3 text-[11px] uppercase tracking-widest text-muted-ink">
-  {/* Left Section */}
-  <p>© {new Date().getFullYear()} Crafted Interiors. All rights reserved.</p>
-  
-  {/* Middle Section (Logo + Text) */}
-  <div className="flex items-center gap-2">
-    <img src={logo} alt="FiveStack Logo" className="h-4 w-4 object-contain" />
-    <p>powered by FiveStack studios</p>
-  </div>
-  
-  {/* Right Section */}
-  <p>Bespoke joinery &amp; cabinetry</p>
-</div>
-
+      <div className="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-ink/5 flex flex-col md:flex-row justify-between items-center gap-3 text-[11px] uppercase tracking-widest text-muted-ink">
+        <p>© 2023 Crafted Interiors. All rights reserved.</p>
+        <p>Bespoke joinery &amp; cabinetry</p>
+      </div>
     </footer>
   );
 }

@@ -24,10 +24,10 @@ export const Route = createFileRoute("/about")({
 });
 
 const process = [
-  { n: "01", title: "Conversation", copy: "We meet at your home or our workshop to understand how you live and what the space needs to do." },
-  { n: "02", title: "Design", copy: "Detailed drawings, material samples, and a full-scale mock-up of the piece before a single joint is cut." },
-  { n: "03", title: "Craft", copy: "Hand-cut joinery, machine precision where it counts, hand-finished surfaces where it matters." },
-  { n: "04", title: "Install", copy: "White-glove installation by the team who built it, with a lifetime aftercare guarantee." },
+  { n: "01", title: "Conversation", copy: "We meet with you to understand what it is you want and what the space needs to do." },
+  { n: "02", title: "Design", copy: "Detailed drawings, curated material samples, and a render of every piece." },
+  { n: "03", title: "Assembly", copy: "We assemble the piece at our workshop, taking all requirements into account to ensure that installation can run as smooth as possible." },
+  { n: "04", title: "Install", copy: "Installation is handled by the very team who built your piece. We are there from start to finish, ensuring every detail settles perfectly into your space." },
 ] as const;
 
 function AboutPage() {
@@ -44,16 +44,14 @@ function AboutPage() {
             </h1>
             <div className="mt-8 space-y-5 text-muted-ink leading-relaxed max-w-[56ch]">
               <p>
-               We started Crafted Interiors on a simple idea: 
-               great cabinetry should feel just as good as it looks. 
-               You notice it in the details. It's the smooth, heavy glide of a perfectly weighted drawer. 
-               It’s the total silence when a solid door closes against its frame. 
-               It’s the way the wood grain flows naturally from one cabinet right into the next.
+               Crafted Interiors was born from a single belief: exceptional cabinetry should perform as beautifully as it appears. 
+               You notice it in the details. It's the smooth, heavy glide of a perfectly weighted drawer or the total silence when a door closes against its frame.
               </p>
               <p>
-                We’re just a small team of designers and cabinetmakers working out of a converted warehouse. 
-                For us, the work is deeply personal. Every single project passes through the exact same set of hands,
-                 from that very first sketch on paper right through to the final installation in your home.
+                We are a dedicated team of designers and cabinetmakers who pour our expertise into every detail. 
+                This isn’t mass production, it’s personal. 
+                Each project remains in the same skilled hands from the consultation to the final placement in your space. 
+                No handoffs, no shortcuts. Just a relentless commitment to quality, from start to finish.
               </p>
             </div>
           </div>
@@ -95,22 +93,16 @@ function AboutPage() {
             </h2>
             <div className="mt-8 space-y-5 text-muted-ink leading-relaxed">
               <p>
-               Material is everything to us. We make sure that the wood is the best quality available and 
-               every single board is hand-selected by our makers for its unique grain, rich colour, and natural stability.
+               Material is everything to us. We make sure that the board is the best quality available.
               </p>
               <p>
-                When it comes to hardware—things like hinges, runners, and brass pulls—we don’t cut corners. 
-                We only use pieces from the exact same makers we’ve known and trusted for over a decade. 
+                When it comes to hardware such as hinges, runners, and fittings, we don’t cut corners. 
+                We use hardware and equipment from the makers we’ve known and built trust with. 
                 We never choose a component just to save a bit of money. 
                 If it goes into your cabinets, it's because it's built to last.
               </p>
             </div>
-            <Link
-              to="/contact"
-              className="mt-10 inline-flex px-6 py-3 bg-ink text-canvas rounded-full text-sm font-medium hover:bg-timber transition-colors"
-            >
-              Visit the workshop
-            </Link>
+            
           </div>
         </div>
       </section>
