@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import kitchen1 from "@/assets/kitchen-1.jpeg";
 import kitchen2 from "@/assets/kitchen-2.jpg";
 import kitchen3 from "@/assets/kitchen-3.jpeg";
+import kitchen4 from "@/assets/kitchen-4.jpeg";
 import kitchen5 from "@/assets/kitchen-5.jpeg";
 import kitchen6 from "@/assets/kitchen-6.jpeg";
 import kitchen8 from "@/assets/kitchen-8.jpeg";
@@ -64,7 +65,7 @@ const kitchenGroups = [
   {
     caption: "Hyde Park - The Noir Kitchen",
     images: [
-      { img: kitchen6, title: "Kitchen Project B — View 1", span: "md:col-span-12", aspect: "aspect-[16/9]" },
+      { img: kitchen4, title: "Kitchen Project B — View 1", span: "md:col-span-12", aspect: "aspect-[16/9]" },
       { img: kitchen2, title: "Kitchen Project B — View 2", span: "md:col-span-6", aspect: "aspect-square" },
       { img: kitchen8, title: "Kitchen Project B — View 3", span: "md:col-span-6", aspect: "aspect-square" },
     ],
