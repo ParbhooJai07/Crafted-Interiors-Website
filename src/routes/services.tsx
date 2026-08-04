@@ -77,9 +77,10 @@ function ServicesPage() {
             Cabinetry, considered.
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-muted-ink leading-relaxed">
-            From a single fitted wardrobe to a full architectural fit-out, every
-            project is drawn, prototyped, and hand-built in our workshop before
-            installation.
+            Whether we’re crafting a single fitted wardrobe 
+            or managing a full architectural fit-out, we do things properly. 
+            Every piece is carefully drawn, prototyped,
+            and built by hand right here in our workshop before we bring it to your space
           </p>
         </div>
       </section>
@@ -87,7 +88,7 @@ function ServicesPage() {
       <section className="pb-24 md:pb-32 bg-canvas">
         <div className="max-w-7xl mx-auto px-6 space-y-24 md:space-y-32">
           {services.map((s, i) => (
-            <article
+            <article 
               key={s.title}
               className={`grid md:grid-cols-2 gap-10 md:gap-16 items-center ${
                 i % 2 === 1 ? "md:[&>*:first-child]:order-2" : ""
@@ -131,13 +132,13 @@ function ServicesPage() {
             Have a project in mind?
           </h2>
           <p className="mt-4 text-canvas/70">
-            Book a consultation at our workshop or your residence.
+            Book a consultation
           </p>
           <Link
             to="/contact"
             className="mt-8 inline-flex px-6 py-3 bg-canvas text-ink rounded-full text-sm font-medium hover:bg-timber hover:text-canvas transition-colors"
           >
-            Get in touch
+            Get in touch.
           </Link>
         </div>
       </section>
