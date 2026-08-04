@@ -4,8 +4,10 @@ import workshop from "@/assets/workshop.jpg";
 import kitchen1 from "@/assets/kitchen-1.jpeg";
 import kitchen2 from "@/assets/kitchen-2.jpeg";
 import kitchen3 from "@/assets/kitchen-3.jpeg";
+import kitchen4 from "@/assets/kitchen-4.jpeg";
+import kitchen6 from "@/assets/kitchen-6.jpeg";
 import hardware1 from "@/assets/hardware-1.jpeg";
-import lounge1 from "@/assets/lounge-1.jpeg";
+import custom3 from "@/assets/custom-3.jpeg";
 import wardrobe1 from "@/assets/wardrobe-1.jpeg";
 
 export const Route = createFileRoute("/")({
@@ -109,7 +111,7 @@ function HomePage() {
                 copy: "Beautifully designed wardrobes for homes that value both form and function.",
               },
               {
-                img: lounge1,
+                img: custom3,
                 title: "Custom Works",
                 copy: "Fixtures from vanities and entertainment units to bar areas that add soul to your home.",
               },
@@ -150,16 +152,16 @@ function HomePage() {
 
           <div className="grid md:grid-cols-12 gap-5 md:gap-6">
             <figure className="md:col-span-8 aspect-[16/10] rounded-lg overflow-hidden ring-1 ring-ink/5 bg-stone">
-              <img src={kitchen2} alt="Hyde Park kitchen" loading="lazy" width={1280} height={800} className="w-full h-full object-cover" />
+              <img src={kitchen6} alt="" loading="lazy" width={1280} height={800} className="w-full h-full object-cover" />
             </figure>
             <figure className="md:col-span-4 aspect-square rounded-lg overflow-hidden ring-1 ring-ink/5 bg-stone">
-              <img src={hardware1} alt="Brass hardware detail" loading="lazy" width={800} height={800} className="w-full h-full object-cover" />
+              <img src={hardware1} alt="" loading="lazy" width={800} height={800} className="w-full h-full object-cover" />
             </figure>
             <figure className="md:col-span-5 aspect-[4/5] rounded-lg overflow-hidden ring-1 ring-ink/5 bg-stone">
-              <img src={kitchen3} alt="Mahogany library" loading="lazy" width={800} height={1200} className="w-full h-full object-cover" />
+              <img src={kitchen3} alt="" loading="lazy" width={800} height={1200} className="w-full h-full object-cover" />
             </figure>
             <figure className="md:col-span-7 aspect-[16/10] rounded-lg overflow-hidden ring-1 ring-ink/5 bg-stone">
-              <img src={lounge1} alt="Architectural wood panelling" loading="lazy" width={1024} height={1024} className="w-full h-full object-cover" />
+              <img src={custom3} alt="" loading="lazy" width={1024} height={1024} className="w-full h-full object-cover" />
             </figure>
           </div>
         </div>
