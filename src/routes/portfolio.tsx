@@ -16,7 +16,7 @@ import hardware1 from "@/assets/hardware-1.jpeg";
 import custom1 from "@/assets/custom-1.jpeg";
 import custom2 from "@/assets/custom-2.jpeg";
 import study3 from "@/assets/study-3.jpeg";
-import lounge1 from "@/assets/lounge-1.jpeg";
+import lounge1 from "@/assets/custom-3.jpeg";
 import wardrobe1 from "@/assets/wardrobe-1.jpeg";
 import wardrobe2 from "@/assets/wardrobe-2.jpeg";
 import wardrobe3edited from "@/assets/wardrobe-3-edited.png";
