@@ -5,8 +5,9 @@ import kitchen1 from "@/assets/kitchen-1.jpeg";
 import kitchen2 from "@/assets/kitchen-2.jpeg";
 import kitchen3 from "@/assets/kitchen-3.jpeg";
 import kitchen4 from "@/assets/kitchen-4.jpeg";
-import kitchen6 from "@/assets/kitchen-6.jpeg";
+import kitchen5 from "@/assets/kitchen-5.jpeg";
 import hardware1 from "@/assets/hardware-1.jpeg";
+import study2 from "@/assets/study-2.jpeg";
 import custom3 from "@/assets/custom-3.jpeg";
 import wardrobe1 from "@/assets/wardrobe-1.jpeg";
 
@@ -152,10 +153,10 @@ function HomePage() {
 
           <div className="grid md:grid-cols-12 gap-5 md:gap-6">
             <figure className="md:col-span-8 aspect-[16/10] rounded-lg overflow-hidden ring-1 ring-ink/5 bg-stone">
-              <img src={kitchen6} alt="" loading="lazy" width={1280} height={800} className="w-full h-full object-cover" />
+              <img src={kitchen5} alt="" loading="lazy" width={1280} height={800} className="w-full h-full object-cover" />
             </figure>
             <figure className="md:col-span-4 aspect-square rounded-lg overflow-hidden ring-1 ring-ink/5 bg-stone">
-              <img src={hardware1} alt="" loading="lazy" width={800} height={800} className="w-full h-full object-cover" />
+              <img src={study2} alt="" loading="lazy" width={800} height={800} className="w-full h-full object-cover" />
             </figure>
             <figure className="md:col-span-5 aspect-[4/5] rounded-lg overflow-hidden ring-1 ring-ink/5 bg-stone">
               <img src={kitchen3} alt="" loading="lazy" width={800} height={1200} className="w-full h-full object-cover" />

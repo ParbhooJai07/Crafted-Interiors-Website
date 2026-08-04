@@ -1,10 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import kitchen1 from "@/assets/kitchen-1.jpeg";
-import kitchen3 from "@/assets/kitchen-3.jpeg";
+import kitchen6 from "@/assets/kitchen-6.jpeg";
 import study2 from "@/assets/study-2.jpeg";
 import custom3 from "@/assets/custom-3.jpeg";
 import wardrobe1 from "@/assets/wardrobe-1.jpeg";
-import joinery1 from "@/assets/joinery-1.jpeg";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
@@ -28,7 +26,7 @@ export const Route = createFileRoute("/services")({
 
 const services = [
   {
-    img: kitchen1,
+    img: kitchen6,
     title: "Bespoke Kitchens",
     copy: "Full-scale kitchen design from concept through installation. Built for integrated appliances, and finishes hand-selected for your palette.",
     details: ["Kitchen islands & butlers pantries", "Integrated appliance housing", "Floor-to-ceiling cabinetry"],
