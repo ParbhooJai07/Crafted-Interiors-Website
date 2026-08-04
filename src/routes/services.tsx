@@ -88,7 +88,7 @@ function ServicesPage() {
       <section className="pb-24 md:pb-32 bg-canvas">
         <div className="max-w-7xl mx-auto px-6 space-y-24 md:space-y-32">
           {services.map((s, i) => (
-            <article
+            <article 
               key={s.title}
               className={`grid md:grid-cols-2 gap-10 md:gap-16 items-center ${
                 i % 2 === 1 ? "md:[&>*:first-child]:order-2" : ""
@@ -138,7 +138,7 @@ function ServicesPage() {
             to="/contact"
             className="mt-8 inline-flex px-6 py-3 bg-canvas text-ink rounded-full text-sm font-medium hover:bg-timber hover:text-canvas transition-colors"
           >
-            Get in touch
+            Get in touch.
           </Link>
         </div>
       </section>

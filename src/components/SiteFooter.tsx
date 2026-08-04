@@ -39,7 +39,7 @@ export function SiteFooter() {
       </div>
       <div className="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-ink/5 flex flex-col md:flex-row justify-between items-center gap-3 text-[11px] uppercase tracking-widest text-muted-ink">
         <p>© 2023 Crafted Interiors. All rights reserved.</p>
-        <p>Bespoke joinery &amp; cabinetry</p>
+        <p>Bespoke joinery. &amp; cabinetry</p>
       </div>
     </footer>
   );
