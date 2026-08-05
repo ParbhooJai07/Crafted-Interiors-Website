@@ -48,7 +48,7 @@ export function SiteFooter() {
             </div> */}
             
               {/* Right Section */}
-            <p>Bespoke joinery &amp; cabinetry</p>
+            <p>Bespoke carpentry &amp; cabinetry</p>
           </div>
     </footer>
   );

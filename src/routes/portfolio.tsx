@@ -12,7 +12,7 @@ import kitchen11 from "@/assets/kitchen-11.jpeg";
 import kitchen12 from "@/assets/kitchen-12.jpeg";
 import kitchen13 from "@/assets/kitchen-13.jpeg";
 import kitchen14 from "@/assets/kitchen-14.jpeg";
-import study1 from "@/assets/study-1.jpeg";
+import study1 from "@/assets/study-1.jpg";
 import study2 from "@/assets/study-2.jpeg";
 import study3 from "@/assets/study-3.jpeg";
 import wardrobe1 from "@/assets/wardrobe-1.jpeg";

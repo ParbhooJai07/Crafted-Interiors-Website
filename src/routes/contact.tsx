@@ -103,8 +103,7 @@ function ContactPage() {
             Let's discuss your space.
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-muted-ink leading-relaxed">
-            Choose the channel that suits you. We usually reply within one
-            working day.
+            Choose the channel that suits you.
           </p>
         </div>
       </section>
@@ -139,9 +138,8 @@ function ContactPage() {
                 <MapPin className="size-5 text-timber shrink-0 mt-1" />
                 <div>
                   <p className="text-[10px] uppercase tracking-widest text-muted-ink">
-                    Workshop
                   </p>
-                  <p className="mt-1 text-base leading-relaxed">{CONTACT.address} - Open to work in Gauteng.</p>
+                  <p className="mt-1 text-base leading-relaxed">Based in Gauteng.</p>
                   <p className="mt-3 text-xs text-muted-ink"></p>
                 </div>
               </div>

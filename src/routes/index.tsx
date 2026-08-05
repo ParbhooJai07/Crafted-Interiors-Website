@@ -109,7 +109,7 @@ function HomePage() {
               {
                 img: wardrobe1,
                 title: "Signature Wardrobes",
-                copy: "Beautifully designed wardrobes for homes that value both form and function.",
+                copy: "Beautifully designed wardrobes for homes that value both form, function and comfort.",
               },
               {
                 img: custom3,
@@ -184,7 +184,7 @@ function HomePage() {
               </p>
               <p>
               Through thoughtful planning, precision craftsmanship, and an unwavering attention
-              to detail, we create bespoke spaces that are built to last—designed not only to
+              to detail, we create spaces that are built to last—designed not only to
               elevate your home but to enrich the way you experience it every day.
               </p>
             </div>

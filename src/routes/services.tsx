@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import kitchen6 from "@/assets/kitchen-6.jpeg";
-import study2 from "@/assets/study-2.jpeg";
+import study1 from "@/assets/study-1.jpg";
 import custom3 from "@/assets/custom-3.jpeg";
 import wardrobe1 from "@/assets/wardrobe-1.jpeg";
 
@@ -34,11 +34,11 @@ const services = [
   {
     img: wardrobe1,
     title: "Signature Wardrobes",
-    copy: "Walk-in dressing rooms and reach-in wardrobes engineered around your wardrobe, with soft-close mechanisms built for utilising space.",
+    copy: "Walk-in dressing rooms and reach-in wardrobes engineered around your lifestyle requirements, with soft-close mechanisms built for utilising space.",
     details: ["Walk-in dressing rooms", "Spacious wardrobes", "Custom drawer & shoe systems"],
   },
   {
-    img: study2,
+    img: study1,
     title: "Studies",
     copy: "Integrated desks and reading nooks — spaces built for a lifetime of productivity, inspiration and creativity.",
     details: ["Built-in bookshelves & display units", "Integrated desks & seating", "Cable management solutions"],

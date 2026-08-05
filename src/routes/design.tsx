@@ -1,17 +1,13 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import drawingStudy1 from "@/assets/drawing-study-1.jpeg";
 import renderStudy1 from "@/assets/render-study-1.jpeg";
-import finalStudy1 from "@/assets/study-1.jpeg";
+import finalStudy1 from "@/assets/study-1.jpg";
 import drawingKitchen1 from "@/assets/drawing-kitchen-1.jpeg";
 import renderKitchen1 from "@/assets/render-kitchen-1.jpeg";
 import drawingKitchen2 from "@/assets/drawing-kitchen-2.jpeg";
 import renderKitchen2 from "@/assets/render-kitchen-2.jpeg";
 import drawingKitchen3 from "@/assets/drawing-kitchen-3.jpeg";
 import renderKitchen3 from "@/assets/render-kitchen-3.jpeg";
-import drawingKitchen4 from "@/assets/drawing-kitchen-4.jpeg";
-import renderKitchen4 from "@/assets/render-kitchen-4.jpeg";
-import drawingKitchen5 from "@/assets/drawing-kitchen-5.jpeg";
-import renderKitchen5 from "@/assets/render-kitchen-5.jpeg";
 import drawingKitchen6 from "@/assets/drawing-kitchen-6.jpeg";
 import renderKitchen6 from "@/assets/render-kitchen-6.jpeg";
 import drawingWardrobe1 from "@/assets/drawing-wardrobe-1.jpeg";
@@ -88,10 +84,6 @@ const gallery = [
   { img: renderKitchen2, w: 1536, h: 1024},
   { img: drawingKitchen3, w: 1223, h: 888 },
   { img: renderKitchen3, w: 1536, h: 1024 },
-  { img: drawingKitchen4, w: 928, h: 667 },
-  { img: renderKitchen4, w: 1536, h: 1024 },
-  { img: drawingKitchen5, w: 1058, h: 681 },
-  { img: renderKitchen5, w: 1536, h: 1024 },
   { img: drawingKitchen6, w: 858, h: 842 },
   { img: renderKitchen6, w: 1536, h: 1024 },
   { img: drawingStudy1, w: 942, h: 695 },
@@ -209,7 +201,7 @@ function DesignPage() {
           <h2 className="font-serif text-4xl">Let's start with a drawing.</h2>
           <p className="mt-4 text-canvas/70 text-sm max-w-[46ch] mx-auto leading-relaxed">
             Send us your space and we'll come back with measured plans and a
-            render before you commit to anything.
+            render.
           </p>
           <Link
             to="/contact"

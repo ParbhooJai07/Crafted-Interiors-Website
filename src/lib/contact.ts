@@ -4,7 +4,7 @@ export const CONTACT = {
   phoneRaw: "+27634682958",
   whatsappRaw: "27634682958",
   whatsappDisplay: "+27 63 468 2958",
-  email: "Ishal.crafted@gmail.com",
+  email: "sales@craftedinteriors.co.za",
   instagramHref: "https://instagram.com/crafted.interiors_",
   instagramDisplay: "crafted.interiors_",
   address: "Lenasia",
