@@ -1,10 +1,8 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "@/lib/router";
 import kitchen1 from "@/assets/kitchen-1.jpeg";
 import kitchen2 from "@/assets/kitchen-2.jpg";
 import kitchen3 from "@/assets/kitchen-3.jpeg";
 import kitchen4 from "@/assets/kitchen-4.jpeg";
-import kitchen5 from "@/assets/kitchen-5.jpeg";
-import kitchen6 from "@/assets/kitchen-6.jpeg";
 import kitchen8 from "@/assets/kitchen-8.jpeg";
 import kitchen9 from "@/assets/kitchen-9.jpeg";
 import kitchen10 from "@/assets/kitchen-10.jpeg";
@@ -13,9 +11,7 @@ import kitchen12 from "@/assets/kitchen-12.jpeg";
 import kitchen13 from "@/assets/kitchen-13.jpeg";
 import kitchen14 from "@/assets/kitchen-14.jpeg";
 import study1 from "@/assets/study-1.jpg";
-import study2 from "@/assets/study-2.jpeg";
 import study3 from "@/assets/study-3.jpeg";
-import wardrobe1 from "@/assets/wardrobe-1.jpeg";
 import wardrobe2 from "@/assets/wardrobe-2.jpeg";
 import wardrobe3edited from "@/assets/wardrobe-3-edited.png";
 import wardrobe4 from "@/assets/wardrobe-4.jpeg";
@@ -24,13 +20,12 @@ import wardrobe6 from "@/assets/wardrobe-6.jpeg";
 import wardrobe7 from "@/assets/wardrobe-7.jpeg";
 import wardrobe8 from "@/assets/wardrobe-8.jpeg";
 import wardrobe9 from "@/assets/wardrobe-9.jpeg";
-import custom1 from "@/assets/custom-1.jpeg";
-import custom2 from "@/assets/custom-2.jpeg";
 import custom3 from "@/assets/custom-3.jpeg";
 import custom4 from "@/assets/custom-4.jpeg";
 import custom7 from "@/assets/custom-7.jpeg";
 import custom8 from "@/assets/custom-8.png";
 
+/* TanStack Start route metadata retained only for reference during migration.
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
     meta: [
@@ -51,6 +46,7 @@ export const Route = createFileRoute("/portfolio")({
   }),
   component: PortfolioPage,
 });
+*/
 
 // Kitchens are grouped by project — each group is a single commission
 // shown across multiple photos, with one caption describing the group.
@@ -144,7 +140,7 @@ const customWorks = {
   },
 } as const;
 
-function PortfolioPage() {
+export function PortfolioPage() {
   return (
     <>
       <section className="pt-24 md:pt-32 pb-14 bg-canvas">

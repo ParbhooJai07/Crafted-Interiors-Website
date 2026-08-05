@@ -1,9 +1,10 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "@/lib/router";
 import kitchen6 from "@/assets/kitchen-6.jpeg";
 import study1 from "@/assets/study-1.jpg";
 import custom3 from "@/assets/custom-3.jpeg";
 import wardrobe1 from "@/assets/wardrobe-1.jpeg";
 
+/* TanStack Start route metadata retained only for reference during migration.
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
@@ -23,6 +24,7 @@ export const Route = createFileRoute("/services")({
   }),
   component: ServicesPage,
 });
+*/
 
 const services = [
   {
@@ -51,7 +53,7 @@ const services = [
   },
 ] as const;
 
-function ServicesPage() {
+export function ServicesPage() {
   return (
     <>
       <section className="pt-24 md:pt-32 pb-16 bg-canvas">

@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link } from "@/lib/router";
 import { CONTACT } from "@/lib/contact";
 import logo from "../assets/CraftedIntLogo.png"
 

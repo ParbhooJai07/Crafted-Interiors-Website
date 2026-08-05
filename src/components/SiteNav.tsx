@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link } from "@/lib/router";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import craftedIntLogo from "../assets/CraftedIntLogo.png";

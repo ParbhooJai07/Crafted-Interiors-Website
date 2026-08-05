@@ -1,8 +1,8 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { Phone, MessageCircle, Mail, MapPin, Instagram } from "lucide-react";
 import { useState } from "react";
 import { CONTACT } from "@/lib/contact";
 
+/* TanStack Start route metadata retained only for reference during migration.
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
@@ -22,8 +22,9 @@ export const Route = createFileRoute("/contact")({
   }),
   component: ContactPage,
 });
+*/
 
-function ContactPage() {
+export function ContactPage() {
   const [sent, setSent] = useState(false);
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {

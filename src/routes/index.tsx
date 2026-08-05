@@ -1,16 +1,14 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "@/lib/router";
 import heroPoster from "@/assets/hero-poster-movie.mp4";
 import backdrop from "@/assets/CraftedIntLogoBackdrop.png";
 import kitchen1 from "@/assets/kitchen-1.jpeg";
-import kitchen2 from "@/assets/kitchen-2.jpeg";
 import kitchen3 from "@/assets/kitchen-3.jpeg";
-import kitchen4 from "@/assets/kitchen-4.jpeg";
 import kitchen5 from "@/assets/kitchen-5.jpeg";
-import hardware1 from "@/assets/hardware-1.jpeg";
 import study2 from "@/assets/study-2.jpeg";
 import custom3 from "@/assets/custom-3.jpeg";
 import wardrobe1 from "@/assets/wardrobe-1.jpeg";
 
+/* TanStack Start route metadata retained only for reference during migration.
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -30,8 +28,9 @@ export const Route = createFileRoute("/")({
   }),
   component: HomePage,
 });
+*/
 
-function HomePage() {
+export function HomePage() {
   return (
     <>
       {/* HERO — cinematic crossfading slideshow (Ken Burns) */}

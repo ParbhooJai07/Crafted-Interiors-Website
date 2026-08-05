@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "@/lib/router";
 import drawingStudy1 from "@/assets/drawing-study-1.jpeg";
 import renderStudy1 from "@/assets/render-study-1.jpeg";
 import finalStudy1 from "@/assets/study-1.jpg";
@@ -23,6 +23,7 @@ import renderCustom3 from "@/assets/render-custom-3.jpeg";
 import drawingCustom4 from "@/assets/drawing-custom-4.jpeg";
 import renderCustom4 from "@/assets/render-custom-4.jpeg";
 
+/* TanStack Start route metadata retained only for reference during migration.
 export const Route = createFileRoute("/design")({
   head: () => ({
     meta: [
@@ -43,6 +44,7 @@ export const Route = createFileRoute("/design")({
   }),
   component: DesignPage,
 });
+*/
 
 const stages = [
   {
@@ -102,7 +104,7 @@ const gallery = [
   { img: renderCustom4, w: 1600, h: 768 },
 ] as const;
 
-function DesignPage() {
+export function DesignPage() {
   return (
     <>
       <section className="pt-24 md:pt-32 pb-14 bg-canvas">
