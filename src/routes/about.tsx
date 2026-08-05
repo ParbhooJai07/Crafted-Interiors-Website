@@ -87,7 +87,7 @@ export function AboutPage() {
       <section className="py-24 bg-canvas">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
           <div className="aspect-[4/5] rounded-lg overflow-hidden ring-1 ring-ink/5 bg-stone">
-            <img src={kitchen15} alt="Joinery detail" loading="lazy" className="w-full h-full object-cover" />
+            <img src={kitchen15} alt="Kitchen detail" loading="lazy" className="w-full h-full object-cover" />
           </div>
           <div>
             <h2 className="font-serif text-4xl md:text-5xl leading-tight max-w-[22ch]">
@@ -105,6 +105,41 @@ export function AboutPage() {
               </p>
             </div>
             
+            <div className="mt-12 pt-8 border-t border-ink/10">
+              <h3 className="font-serif text-2xl">
+                Company information
+              </h3>
+
+              <dl className="mt-6 space-y-4 text-sm">
+                <div>
+                  <dt className="uppercase tracking-[0.2em] text-[11px] text-timber font-semibold">
+                    Registered Company Name
+                  </dt>
+                  <dd className="mt-1 text-muted-ink">
+                    Parbhoo Creations (Pty) Ltd t/a Crafted Interiors<br />
+                    Registration No.: 2024/012226/07
+                  </dd>
+                </div>
+
+                <div>
+                  <dt className="uppercase tracking-[0.2em] text-[11px] text-timber font-semibold">
+                    Physical Address
+                  </dt>
+                  <dd className="mt-1 text-muted-ink">
+                    69 Nightingale Ave, Lenasia, 1827
+                  </dd>
+                </div>
+
+                <div>
+                  <dt className="uppercase tracking-[0.2em] text-[11px] text-timber font-semibold">
+                    Directors
+                  </dt>
+                  <dd className="mt-1 text-muted-ink">
+                    I. Parbhoo, J. Parbhoo
+                  </dd>
+                </div>
+              </dl>
+            </div>
           </div>
         </div>
       </section>
