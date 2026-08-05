@@ -1,13 +1,31 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import designSketch from "@/assets/drawing-study-1.jpeg";
-import designRender from "@/assets/render-study-1.jpeg";
-import designFinal from "@/assets/study-1.jpeg";
-import designRenderWardrobe from "@/assets/design-render-wardrobe.jpg";
-import designDrawingLibrary from "@/assets/design-drawing-library.jpg";
-import designRenderIsland from "@/assets/design-render-island.jpg";
-import projectPantry from "@/assets/kitchen-1.jpeg";
-import projectVanity from "@/assets/study-1.jpeg";
-import projectLibrary from "@/assets/wardrobe-1.jpeg";
+import drawingStudy1 from "@/assets/drawing-study-1.jpeg";
+import renderStudy1 from "@/assets/render-study-1.jpeg";
+import finalStudy1 from "@/assets/study-1.jpeg";
+import drawingKitchen1 from "@/assets/drawing-kitchen-1.jpeg";
+import renderKitchen1 from "@/assets/render-kitchen-1.jpeg";
+import drawingKitchen2 from "@/assets/drawing-kitchen-2.jpeg";
+import renderKitchen2 from "@/assets/render-kitchen-2.jpeg";
+import drawingKitchen3 from "@/assets/drawing-kitchen-3.jpeg";
+import renderKitchen3 from "@/assets/render-kitchen-3.jpeg";
+import drawingKitchen4 from "@/assets/drawing-kitchen-4.jpeg";
+import renderKitchen4 from "@/assets/render-kitchen-4.jpeg";
+import drawingKitchen5 from "@/assets/drawing-kitchen-5.jpeg";
+import renderKitchen5 from "@/assets/render-kitchen-5.jpeg";
+import drawingKitchen6 from "@/assets/drawing-kitchen-6.jpeg";
+import renderKitchen6 from "@/assets/render-kitchen-6.jpeg";
+import drawingWardrobe1 from "@/assets/drawing-wardrobe-1.jpeg";
+import renderWardrobe1 from "@/assets/render-wardrobe-1.jpeg";
+import drawingWardrobe2 from "@/assets/drawing-wardrobe-2.jpeg";
+import renderWardrobe2 from "@/assets/render-wardrobe-2.jpeg";
+import drawingCustom1 from "@/assets/drawing-custom-1.jpeg";
+import renderCustom1 from "@/assets/render-custom-1.jpeg";
+import drawingCustom2 from "@/assets/drawing-custom-2.jpeg";
+import renderCustom2 from "@/assets/render-custom-2.jpeg";
+import drawingCustom3 from "@/assets/drawing-custom-3.jpeg";
+import renderCustom3 from "@/assets/render-custom-3.jpeg";
+import drawingCustom4 from "@/assets/drawing-custom-4.jpeg";
+import renderCustom4 from "@/assets/render-custom-4.jpeg";
 
 export const Route = createFileRoute("/design")({
   head: () => ({
@@ -34,7 +52,7 @@ const stages = [
   {
     n: "01",
     title: "The Drawing",
-    img: designSketch,
+    img: drawingStudy1,
     w: 1280,
     h: 960,
     lead: "Measured by hand, drawn to scale.",
@@ -44,7 +62,7 @@ const stages = [
   {
     n: "02",
     title: "The Render",
-    img: designRender,
+    img: renderStudy1,
     w: 1280,
     h: 960,
     lead: "See the room before we build it.",
@@ -54,7 +72,7 @@ const stages = [
   {
     n: "03",
     title: "The Final Piece",
-    img: designFinal,
+    img: finalStudy1,
     w: 1280,
     h: 960,
     lead: "Built, finished and installed.",
@@ -64,14 +82,32 @@ const stages = [
 ] as const;
 
 const gallery = [
-  { img: designDrawingLibrary, title: "Cotswold Library", tag: "Drawing", span: "md:col-span-4", aspect: "aspect-[4/5]", w: 1024, h: 1280 },
-  { img: designRenderIsland, title: "Skylight Island Kitchen", tag: "Render", span: "md:col-span-8", aspect: "aspect-[16/10]", w: 1280, h: 960 },
-  { img: designRenderWardrobe, title: "Master Dressing Room", tag: "Render", span: "md:col-span-5", aspect: "aspect-[4/5]", w: 1024, h: 1280 },
-  { img: projectLibrary, title: "Library, as built", tag: "Final", span: "md:col-span-7", aspect: "aspect-[16/10]", w: 1280, h: 960 },
-  { img: designSketch, title: "Elevation A, Hyde Park", tag: "Drawing", span: "md:col-span-7", aspect: "aspect-[16/10]", w: 1280, h: 960 },
-  { img: projectPantry, title: "The Baker's Pantry", tag: "Final", span: "md:col-span-5", aspect: "aspect-[4/5]", w: 1280, h: 960 },
-  { img: designRender, title: "Walnut Kitchen Study", tag: "Render", span: "md:col-span-6", aspect: "aspect-[4/3]", w: 1280, h: 960 },
-  { img: projectVanity, title: "Oak & Travertine Vanity", tag: "Final", span: "md:col-span-6", aspect: "aspect-[4/3]", w: 1280, h: 960 },
+  { img: drawingKitchen1, w: 875, h: 593 },
+  { img: renderKitchen1, w: 1536, h: 1024 },
+  { img: drawingKitchen2, w: 1167, h: 765 },
+  { img: renderKitchen2, w: 1536, h: 1024},
+  { img: drawingKitchen3, w: 1223, h: 888 },
+  { img: renderKitchen3, w: 1536, h: 1024 },
+  { img: drawingKitchen4, w: 928, h: 667 },
+  { img: renderKitchen4, w: 1536, h: 1024 },
+  { img: drawingKitchen5, w: 1058, h: 681 },
+  { img: renderKitchen5, w: 1536, h: 1024 },
+  { img: drawingKitchen6, w: 858, h: 842 },
+  { img: renderKitchen6, w: 1536, h: 1024 },
+  { img: drawingStudy1, w: 942, h: 695 },
+  { img: renderStudy1, w: 1419, h: 997 },
+  { img: drawingWardrobe1, w: 713, h: 863 },
+  { img: renderWardrobe1, w: 1536, h: 1024 },
+  { img: drawingWardrobe2, w: 702, h: 725 },
+  { img: renderWardrobe2, w: 1024, h: 1024 },
+  { img: drawingCustom1, w: 802, h: 587 },
+  { img: renderCustom1, w: 802, h: 587 },
+  { img: drawingCustom2, w: 710, h: 402 },
+  { img: renderCustom2, w: 710, h: 402 },
+  { img: drawingCustom3, w: 802, h: 877 },
+  { img: renderCustom3, w: 1108, h: 1420 },
+  { img: drawingCustom4, w: 1283, h: 617 },
+  { img: renderCustom4, w: 1600, h: 768 },
 ] as const;
 
 function DesignPage() {
@@ -146,25 +182,22 @@ function DesignPage() {
             Previous designs and renders.
           </h2>
 
-          <div className="mt-12 grid md:grid-cols-12 gap-5 md:gap-6">
-            {gallery.map((g) => (
-              <figure key={g.title} className={`${g.span} group`}>
-                <div className={`${g.aspect} rounded-lg overflow-hidden ring-1 ring-ink/5 bg-canvas`}>
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
+            {gallery.map((g, i) => (
+              <figure key={i} className="group">
+                <div
+                  style={{ aspectRatio: `${g.w} / ${g.h}` }}
+                  className="rounded-lg overflow-hidden ring-1 ring-ink/5 bg-canvas"
+                >
                   <img
                     src={g.img}
-                    alt={`${g.tag} — ${g.title}`}
+                    alt=""
                     loading="lazy"
                     width={g.w}
                     height={g.h}
-                    className="w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.03]"
+                    className="w-full h-full object-contain transition-transform duration-[1200ms] ease-out group-hover:scale-[1.03]"
                   />
                 </div>
-                <figcaption className="mt-4 flex justify-between items-baseline gap-4">
-                  <span className="font-serif text-lg">{g.title}</span>
-                  <span className="text-[10px] uppercase tracking-widest text-muted-ink">
-                    {g.tag}
-                  </span>
-                </figcaption>
               </figure>
             ))}
           </div>

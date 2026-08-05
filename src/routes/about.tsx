@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import workshop from "@/assets/workshop.jpg";
-import kitchen1 from "@/assets/kitchen-1.jpeg";
+import kitchen11 from "@/assets/kitchen-11.jpeg";
+import kitchen15 from "@/assets/kitchen-15.jpeg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -17,7 +17,7 @@ export const Route = createFileRoute("/about")({
         content:
           "A small bespoke carpentry studio designing and hand-building heirloom-quality cabinetry.",
       },
-      { property: "og:image", content: workshop },
+      { property: "og:image", content: kitchen11 },
     ],
   }),
   component: AboutPage,
@@ -56,7 +56,7 @@ function AboutPage() {
             </div>
           </div>
           <div className="aspect-[4/5] rounded-lg overflow-hidden ring-1 ring-ink/5 bg-stone">
-            <img src={workshop} alt="The workshop" loading="lazy" className="w-full h-full object-cover" />
+            <img src={kitchen11} alt="The workshop" loading="lazy" className="w-full h-full object-cover" />
           </div>
         </div>
       </section>
@@ -85,7 +85,7 @@ function AboutPage() {
       <section className="py-24 bg-canvas">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
           <div className="aspect-[4/5] rounded-lg overflow-hidden ring-1 ring-ink/5 bg-stone">
-            <img src={kitchen1} alt="Joinery detail" loading="lazy" className="w-full h-full object-cover" />
+            <img src={kitchen15} alt="Joinery detail" loading="lazy" className="w-full h-full object-cover" />
           </div>
           <div>
             <h2 className="font-serif text-4xl md:text-5xl leading-tight max-w-[22ch]">
