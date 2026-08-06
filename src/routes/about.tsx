@@ -135,7 +135,7 @@ export function AboutPage() {
                     Directors
                   </dt>
                   <dd className="mt-1 text-muted-ink">
-                    I. Parbhoo, J. Parbhoo
+                    J. Parbhoo
                   </dd>
                 </div>
               </dl>
